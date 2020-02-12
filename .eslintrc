@@ -52,5 +52,10 @@
     "space-unary-ops": "error",
     "spaced-comment": "error",
     "yoda": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
