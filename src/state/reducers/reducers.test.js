@@ -1,4 +1,5 @@
-import { reducers, todos } from './reducers';
+import { fromJS } from 'immutable';
+import { initialState, reducers, todos } from './reducers';
 import {
   ADD_TODO,
   UPDATE_TODO,
@@ -14,41 +15,41 @@ describe('todos', () => {
   };
 
   it('returns default state', () => {
-    expect(todos()).toEqual({});
+    expect(todos()).toEqual(initialState);
   });
 
   it('returns state for an unrecognised action', () => {
-    const initialState = {
+    const testState = fromJS({
       'test-id': testTodo
-    };
-    const expectedState = initialState;
+    });
+    const expectedState = testState;
     const testAction = {type: 'TEST_ACTION'};
 
-    expect(todos(initialState, testAction)).toEqual(expectedState);
+    expect(todos(testState, testAction)).toEqual(expectedState);
   });
 
   it('adds a todo to state when an ADD_TODO action is passed', () => {
-    const expectedState = {
+    const expectedState = fromJS({
       'test-id': testTodo
-    };
+    });
     const testAction = {
       type: ADD_TODO,
       todo: testTodo
     };
 
-    expect(todos({}, testAction)).toEqual(expectedState);
+    expect(todos(fromJS({}), testAction)).toEqual(expectedState);
   });
 
   it('updates an existing todo when an UPDATE_TODO action is passed', () => {
-    const initialState = {
+    const testState = fromJS({
       'test-id': testTodo
-    };
-    const expectedState = {
+    });
+    const expectedState = fromJS({
       'test-id': {
         ...testTodo,
         description: 'A few tests down, some to go!'
       }
-    };
+    });
 
     const testAction = {
       type: UPDATE_TODO,
@@ -60,7 +61,7 @@ describe('todos', () => {
       }
     };
 
-    expect(todos(initialState, testAction)).toEqual(expectedState);
+    expect(todos(testState, testAction)).toEqual(expectedState);
   });
 
   it('removes an existing todo when a REMOVE_TODO action is passed', () => {
@@ -68,20 +69,20 @@ describe('todos', () => {
       ...testTodo,
       id: 'test-id-2'
     };
-    const initialState = {
+    const testState = fromJS({
       'test-id': testTodo,
       'test-id-2': testTodoTwo
-    };
-    const expectedState = {
+    });
+    const expectedState = fromJS({
       'test-id': testTodo
-    };
+    });
 
     const testAction = {
       type: REMOVE_TODO,
-      todo: testTodoTwo
+      id: testTodoTwo.id
     };
 
-    expect(todos(initialState, testAction)).toEqual(expectedState);
+    expect(todos(testState, testAction)).toEqual(expectedState);
   });
 });
 

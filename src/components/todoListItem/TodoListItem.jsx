@@ -9,24 +9,24 @@ export function TodoListItem(props) {
     name,
     description,
     creationDate,
-    onRemoveTodo
+    onRemove
   } = props;
 
-  function onDeleteClick() {
-    onRemoveTodo({id, name, description, creationDate});
+  function remove() {
+    onRemove(id);
   }
 
   return (
-    <div>
+    <li className='todo-list__item'>
       <div>
-        <span>{name}</span>
-        <button onClick={onDeleteClick}>
-          Delete
+        <h3>{name}</h3>
+        <button onClick={remove}>
+          Remove
         </button>
       </div>
       <a>{description}</a>
       <a>{creationDate}</a>
-    </div>
+    </li>
   );
 }
 
@@ -35,12 +35,12 @@ TodoListItem.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   creationDate: PropTypes.string.isRequired,
-  onRemoveTodo: PropTypes.func.isRequired
+  onRemove: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    onRemoveTodo: todo => dispatch(removeTodo(todo))
+    onRemove: id => dispatch(removeTodo(id))
   };
 };
 

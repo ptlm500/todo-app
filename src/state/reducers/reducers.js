@@ -1,7 +1,23 @@
 import { combineReducers } from 'redux';
+import { fromJS } from 'immutable';
 import { ADD_TODO, UPDATE_TODO, REMOVE_TODO } from '../actions/actions';
 
-export function todos(state = {}, action) {
+export const initialState = fromJS({
+  'test-id': {
+    id: 'test-id',
+    name: 'Test Todo',
+    description: 'Pass all tests!',
+    creationDate: '1581549548'
+  },
+  'test-id-2': {
+    id: 'test-id-2',
+    name: 'Test Todo 2',
+    description: 'Style these things!',
+    creationDate: '1581549548'
+  }
+});
+
+export function todos(state = initialState, action) {
   if (!action) {
     console.warn('[todos]: No action passed');
     return state;
@@ -12,30 +28,19 @@ export function todos(state = {}, action) {
     const newState = state;
     const { todo } = action;
 
-    newState[todo.id] = todo;
-
-    return newState;
+    return newState.set(todo.id, fromJS(todo));
   }
   case UPDATE_TODO: {
     const newState = state;
     const { todo } = action;
-    const oldTodo = state[todo.id];
 
-    newState[todo.id] = {
-      ...oldTodo,
-      ...todo
-    };
-
-    return newState;
+    return newState.mergeIn([todo.id], fromJS(todo));
   }
   case REMOVE_TODO: {
     const newState = state;
-    const { todo } = action;
+    const { id } = action;
 
-
-    delete newState[todo.id];
-
-    return newState;
+    return newState.delete(id);
   }
   default:
     return state;

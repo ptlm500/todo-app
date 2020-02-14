@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import Immutable from 'immutable';
 import { connect } from 'react-redux';
 import TodoListItem from '../todoListItem';
 
@@ -9,13 +9,14 @@ function renderTodos(todos) {
     .map((todo) => <TodoListItem key={todo.id} {...todo} />);
 }
 
+
 export function TodoList(props) {
   const { todos } = props;
 
   return (
-    <div>
+    <ul>
       {renderTodos(todos)}
-    </div>
+    </ul>
   );
 }
 
@@ -28,10 +29,23 @@ TodoList.propTypes = {
   }))
 };
 
+export function Container(props) {
+  const { todos } = props;
+
+  return (
+    <TodoList todos={todos.toJS && todos.toJS()} />
+  );
+}
+
+Container.propTypes = {
+  todos: PropTypes.instanceOf(Immutable.Map)
+};
+
 const mapStateToProps = (state) => ({
   todos: state.todos
 });
 
+
 export default connect(
   mapStateToProps
-)(TodoList);
+)(Container);
