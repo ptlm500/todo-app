@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineEditable edit mode exits when onBlur of the editContainer is called, calling onSubmit 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      test value
+    </span>
+  </div>
+</div>
+`;
+
+exports[`InlineEditable edit mode exits when the Escape key is pressed inside the editContainer, calling onSubmit 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      test value
+    </span>
+  </div>
+</div>
+`;
+
+exports[`InlineEditable edit mode ignores non-escape key presses inside the editContainer 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-container"
+    onBlur={[Function]}
+    onKeyDown={[Function]}
+  >
+    <input
+      placeholder="test placeholder"
+      value="test value"
+    />
+  </div>
+</div>
+`;
+
+exports[`InlineEditable edit mode triggers when the edit-trigger is clicked 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-container"
+    onBlur={[Function]}
+    onKeyDown={[Function]}
+  >
+    <input
+      placeholder="test placeholder"
+      value="test value"
+    />
+  </div>
+</div>
+`;
+
+exports[`InlineEditable renders a message to provide a placeholder when no value or placeholder is provided 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      Provide a placeholder value
+    </span>
+  </div>
+</div>
+`;
+
+exports[`InlineEditable renders a placeholder when no value is provided 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      test placeholder
+    </span>
+  </div>
+</div>
+`;
+
+exports[`InlineEditable renders a value when provided 1`] = `
+<div
+  className="inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      test value
+    </span>
+  </div>
+</div>
+`;
+
+exports[`InlineEditable throws an error when multiple child components are passed to it 1`] = `"[InlineEditable]: Multiple child components passed. InlineEditable only accepts one child"`;
