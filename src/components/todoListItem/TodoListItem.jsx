@@ -45,9 +45,10 @@ export function TodoListItem(props) {
 
   return (
     <li className='todo-list__item'>
-      <section>
+      <div>
         <InlineEditable
           value={name}
+          placeholder={' '}
           onSubmit={updateName}
         >
           <input
@@ -57,9 +58,10 @@ export function TodoListItem(props) {
         <button onClick={remove}>
           Remove
         </button>
-      </section>
+      </div>
       <InlineEditable
         value={description}
+        placeholder={' '}
         onSubmit={updateDescription}
       >
         <TextareaAutosize
