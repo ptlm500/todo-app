@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "lint": "./node_modules/.bin/eslint ./src/",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "jest --ci"
   },
   "repository": {
     "type": "git",
