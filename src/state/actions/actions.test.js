@@ -1,4 +1,10 @@
 import * as actions from './actions';
+import {
+  BACK,
+  FORWARD,
+  TOGGLE_RECORDING,
+  CLEAR_RECORDING
+} from '../reducers/recordable/recordableActions';
 
 const testTodo = {
   id: 'test-id',
@@ -45,5 +51,21 @@ describe('actions', () => {
       type: actions.REMOVE_TODO,
       id: testTodo.id
     });
+  });
+
+  it('exports a back function that returns a BACK action', () => {
+    expect(actions.back()).toEqual({type: BACK});
+  });
+
+  it('exports a forward function that returns a FORWARD action', () => {
+    expect(actions.forward()).toEqual({type: FORWARD});
+  });
+
+  it('exports a toggleRecording function that returns a TOGGLE_RECORDING action', () => {
+    expect(actions.toggleRecording()).toEqual({type: TOGGLE_RECORDING});
+  });
+
+  it('exports a clearRecording function that returns a CLEAR_RECORDING action', () => {
+    expect(actions.clearRecording()).toEqual({type: CLEAR_RECORDING});
   });
 });
