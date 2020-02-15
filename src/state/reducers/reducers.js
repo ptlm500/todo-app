@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { fromJS } from 'immutable';
 import { ADD_TODO, UPDATE_TODO, REMOVE_TODO } from '../actions/actions';
+import { recordable } from './recordable';
 
 export const initialState = fromJS({
   'test-id': {
@@ -47,8 +48,10 @@ export function todos(state = initialState, action) {
   }
 }
 
+const recordableTodos = recordable(todos);
+
 export const reducers = {
-  todos
+  todos: recordableTodos
 };
 
 export default combineReducers(reducers);
