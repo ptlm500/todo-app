@@ -6,6 +6,12 @@ import {
   REMOVE_TODO
 } from '../actions/actions';
 
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
+jest.mock('./recordable/recordable', () => jest.fn(args => args));
+
 describe('todos', () => {
   const testTodo = {
     id: 'test-id',
@@ -87,7 +93,7 @@ describe('todos', () => {
 });
 
 describe('reducers', () => {
-  it('contains todos', () => {
+  it('contains recordable todos', () => {
     expect(reducers).toEqual({todos});
   });
 });

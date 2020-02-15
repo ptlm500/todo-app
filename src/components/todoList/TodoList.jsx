@@ -42,7 +42,7 @@ Container.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  todos: state.todos
+  todos: state.todos.get('present')
 });
 
 
