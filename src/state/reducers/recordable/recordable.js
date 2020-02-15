@@ -16,28 +16,34 @@ export default function recordable(reducer) {
 
     switch(action.type) {
     case BACK: {
-      const previousState = past.last();
-      const newPast = past.pop();
+      if (past.size !== 0) {
+        const previousState = past.last();
+        const newPast = past.pop();
 
-      return state.withMutations(currentState =>
-        currentState
-          .set('past', newPast)
-          .set('present', previousState)
-          .update('future', previousFuture =>
-            previousFuture.insert(0, present)
-          )
-      );
+        return state.withMutations(currentState =>
+          currentState
+            .set('past', newPast)
+            .set('present', previousState)
+            .update('future', previousFuture =>
+              previousFuture.insert(0, present)
+            )
+        );
+      }
+      return state;
     }
     case FORWARD: {
-      const nextState = future.first();
-      const newFuture = future.shift();
+      if (future.size !== 0) {
+        const nextState = future.first();
+        const newFuture = future.shift();
 
-      return state.withMutations(currentState =>
-        currentState
-          .update('past', previousPast => previousPast.push(present))
-          .set('present', nextState)
-          .set('future', newFuture)
-      );
+        return state.withMutations(currentState =>
+          currentState
+            .update('past', previousPast => previousPast.push(present))
+            .set('present', nextState)
+            .set('future', newFuture)
+        );
+      }
+      return state;
     }
     case CLEAR_RECORDING: {
       return state.withMutations(currentState =>

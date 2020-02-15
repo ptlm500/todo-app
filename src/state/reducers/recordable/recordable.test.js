@@ -1,4 +1,4 @@
-import { fromJS } from 'immutable';
+import { fromJS, List } from 'immutable';
 import recordable from './recordable';
 import { CLEAR_RECORDING, BACK, FORWARD, TOGGLE_RECORDING } from './recordableActions';
 
@@ -81,6 +81,18 @@ describe('recordable', () => {
       .toEqual(expectedState);
   });
 
+  it('updates the state correctly when a BACK action is passed and there is no past', () => {
+    const expectedState = fromJS({
+      past: [],
+      present: 2,
+      future: [3],
+      recordingEnabled: true
+    });
+
+    expect(reducerWithRecordable(testState.set('past', List()), {type: BACK}))
+      .toEqual(expectedState);
+  });
+
   it('updates the state correctly when a FORWARD action is passed', () => {
     const expectedState = fromJS({
       past: [0, 1, 2],
@@ -90,6 +102,20 @@ describe('recordable', () => {
     });
 
     expect(reducerWithRecordable(testState, {type: FORWARD}))
+      .toEqual(expectedState);
+  });
+
+  it('updates the state correctly when a BACK action is passed and there is no future', () => {
+    const expectedState = fromJS({
+      past: [0, 1],
+      present: 2,
+      future: [],
+      recordingEnabled: true
+    });
+
+    expect(reducerWithRecordable(
+      testState.set('future', List()), {type: FORWARD})
+    )
       .toEqual(expectedState);
   });
 
