@@ -16,9 +16,9 @@ export function updateTodo(todo) {
   };
 }
 
-export function removeTodo(todo) {
+export function removeTodo(id) {
   return {
     type: REMOVE_TODO,
-    todo
+    id
   };
 }

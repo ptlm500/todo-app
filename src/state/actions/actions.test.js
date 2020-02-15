@@ -38,12 +38,12 @@ describe('actions', () => {
     });
   });
 
-  it('exports an updateTodo function that returns an REMOVE_TODO action with a todo', () => {
-    const action = actions.removeTodo(testTodo);
+  it('exports an updateTodo function that returns an REMOVE_TODO action with an id', () => {
+    const action = actions.removeTodo(testTodo.id);
 
     expect(action).toEqual({
       type: actions.REMOVE_TODO,
-      todo: testTodo
+      id: testTodo.id
     });
   });
 });
