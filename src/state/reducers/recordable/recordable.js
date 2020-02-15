@@ -54,7 +54,7 @@ export default function recordable(reducer) {
       const newPresent = reducer(present, action);
 
       if (is(newPresent, present)) {
-        // Not necessary to update state
+        // If newPresent is equal to present it isn't necessary to update state
         return state;
       }
 
@@ -65,13 +65,11 @@ export default function recordable(reducer) {
           .update('past', previousPast => previousPast.push(present));
       }
 
-      newState = newState.withMutations(currentstate =>
+      return newState.withMutations(currentstate =>
         currentstate
           .set('present', newPresent)
           .set('future', List())
       );
-
-      return newState;
     }
     }
   };
