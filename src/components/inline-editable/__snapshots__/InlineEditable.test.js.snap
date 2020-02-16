@@ -119,4 +119,21 @@ exports[`InlineEditable renders a value when provided 1`] = `
 </div>
 `;
 
+exports[`InlineEditable sets a className on the outer div when provided 1`] = `
+<div
+  className="test-class inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      test value
+    </span>
+  </div>
+</div>
+`;
+
 exports[`InlineEditable throws an error when multiple child components are passed to it 1`] = `"[InlineEditable]: Multiple child components passed. InlineEditable only accepts one child"`;
