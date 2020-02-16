@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import {
   toggleRecording,
   clearRecording,
@@ -11,8 +12,9 @@ import { SecondaryButton } from '../button';
 import Indicator from '../indicator/Indicator';
 import { theme } from '../../styles';
 
-export function RecordingControls(props) {
+function RecordingControls(props) {
   const {
+    className,
     recordingEnabled,
     disableForward,
     disableClear,
@@ -23,10 +25,13 @@ export function RecordingControls(props) {
   } = props;
 
   return (
-    <div className='recording-controls'>
+    <div className={className}>
       <Indicator pulsing fill={theme.red} disabled={!recordingEnabled} />
       <SecondaryButton onClick={onToggleRecording}>
         {recordingEnabled ? 'Stop' : 'Start'}
+      </SecondaryButton>
+      <SecondaryButton danger onClick={onClearRecording} disabled={disableClear}>
+        Clear
       </SecondaryButton>
       <SecondaryButton onClick={onBack}>
         Back
@@ -34,14 +39,35 @@ export function RecordingControls(props) {
       <SecondaryButton onClick={onForward} disabled={disableForward}>
         Forward
       </SecondaryButton>
-      <SecondaryButton danger onClick={onClearRecording} disabled={disableClear}>
-        Clear
-      </SecondaryButton>
     </div>
   );
 }
 
+export const StyledRecordingControls = styled(RecordingControls)`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  bottom: 0;
+  background-color: ${theme.primaryDark};
+  position: fixed;
+  width: 90%;
+  padding: 0.5rem 1rem;
+
+  > * {
+    margin: 0 0.5rem;
+
+    &:first-child {
+      margin: 0 1rem 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 0.5rem;
+    }
+  }
+`;
+
 RecordingControls.propTypes = {
+  className: PropTypes.string.isRequired,
   recordingEnabled: PropTypes.bool.isRequired,
   disableForward: PropTypes.bool,
   disableClear: PropTypes.bool,
@@ -74,4 +100,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(RecordingControls);
+)(StyledRecordingControls);

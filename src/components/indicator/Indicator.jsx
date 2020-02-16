@@ -17,7 +17,6 @@ export const circlePulse = () => keyframes`
 
 const StyledIndicator = styled.svg`
   display: inline-block;
-  margin: auto;
   width: 12px;
   height: 12px;
 `;

@@ -3,7 +3,6 @@
 exports[`Indicator renders a disabled indicator 1`] = `
 .c0 {
   display: inline-block;
-  margin: auto;
   width: 12px;
   height: 12px;
 }
@@ -36,7 +35,6 @@ exports[`Indicator renders a disabled indicator 1`] = `
 exports[`Indicator renders an indicator 1`] = `
 .c0 {
   display: inline-block;
-  margin: auto;
   width: 12px;
   height: 12px;
 }
@@ -92,7 +90,6 @@ Keyframes {
 exports[`pulsing Indicator renders a disabled pulsing indicator 1`] = `
 .c0 {
   display: inline-block;
-  margin: auto;
   width: 12px;
   height: 12px;
 }
@@ -125,7 +122,6 @@ exports[`pulsing Indicator renders a disabled pulsing indicator 1`] = `
 exports[`pulsing Indicator renders a pulsing indicator 1`] = `
 .c0 {
   display: inline-block;
-  margin: auto;
   width: 12px;
   height: 12px;
 }
