@@ -5,6 +5,9 @@ exports[`Card renders a Card 1`] = `
   background: #C5CAE9;
   border-radius: 0.5rem;
   padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 <div

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutosizingTextarea renders an AutosizingTextarea 1`] = `
+.c0 {
+  background: #FFFFFF;
+  color: #212121;
+  font: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border: 1px solid #BDBDBD;
+  padding: 0px;
+  width: 100%;
+}
+
+<textarea
+  async={false}
+  className="c0"
+  onChange={[Function]}
+  rows={1}
+/>
+`;

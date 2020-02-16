@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
 import InlineEditable from '../inline-editable';
-import TextareaAutosize from 'react-autosize-textarea';
+import AutosizingTextarea from '../autosizingTextarea';
 import Card from '../card';
 import Input from '../input';
 
@@ -64,7 +64,7 @@ export function TodoListItem(props) {
         placeholder={' '}
         onSubmit={updateDescription}
       >
-        <TextareaAutosize
+        <AutosizingTextarea
           onChange={e => setDescription(e.target.value)}
         />
       </InlineEditable>

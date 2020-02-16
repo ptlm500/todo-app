@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addTodo } from '../../state/actions/actions';
-import TextareaAutosize from 'react-autosize-textarea';
 import { v4 as uuid } from 'uuid';
+import AutosizingTextarea from '../autosizingTextarea';
 import {
   PrimaryButton,
   SecondaryButton
@@ -51,7 +51,7 @@ export function AddTodoListItem(props) {
           value={name}
           onChange={e => setName(e.target.value)}
         />
-        <TextareaAutosize
+        <AutosizingTextarea
           placeholder={'Enter a description'}
           value={description}
           onChange={e => setDescription(e.target.value)}
