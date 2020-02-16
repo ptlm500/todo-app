@@ -7,6 +7,7 @@ import {
   back,
   forward
 } from '../../state/actions/actions';
+import { SecondaryButton } from '../button';
 
 export function RecordingControls(props) {
   const {
@@ -21,18 +22,18 @@ export function RecordingControls(props) {
 
   return (
     <div className='recording-controls'>
-      <button onClick={onToggleRecording}>
+      <SecondaryButton onClick={onToggleRecording}>
         {recordingEnabled ? 'Stop' : 'Start'}
-      </button>
-      <button onClick={onBack}>
+      </SecondaryButton>
+      <SecondaryButton onClick={onBack}>
         Back
-      </button>
-      <button onClick={onForward} disabled={disableForward}>
+      </SecondaryButton>
+      <SecondaryButton onClick={onForward} disabled={disableForward}>
         Forward
-      </button>
-      <button onClick={onClearRecording} disabled={disableClear}>
+      </SecondaryButton>
+      <SecondaryButton danger onClick={onClearRecording} disabled={disableClear}>
         Clear
-      </button>
+      </SecondaryButton>
     </div>
   );
 }

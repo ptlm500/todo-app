@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import { addTodo } from '../../state/actions/actions';
 import TextareaAutosize from 'react-autosize-textarea';
 import { v4 as uuid } from 'uuid';
+import {
+  PrimaryButton,
+  SecondaryButton
+} from '../button';
 
 import './addTodoListItem.scss';
 
@@ -38,7 +42,7 @@ export function AddTodoListItem(props) {
 
   return (
     !addingItem ? (
-      <button onClick={() => setAddingItem(true)}>New todo</button>
+      <PrimaryButton onClick={() => setAddingItem(true)}>New todo</PrimaryButton>
     ) : (
       <div className='todo-list__new-item'>
         <input
@@ -52,8 +56,8 @@ export function AddTodoListItem(props) {
           onChange={e => setDescription(e.target.value)}
         />
         <div className='todo-list__new-item-actions'>
-          <button onClick={submitTodo}>Add</button>
-          <button onClick={cancel}>Cancel</button>
+          <SecondaryButton onClick={cancel}>Cancel</SecondaryButton>
+          <PrimaryButton onClick={submitTodo}>Add</PrimaryButton>
         </div>
       </div>
     )

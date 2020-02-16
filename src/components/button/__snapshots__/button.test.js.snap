@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryButton renders a Primary button 1`] = `
+.c0 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.c0:hover {
+  background: #C5CAE9;
+}
+
+.c0:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #757575;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`PrimaryButton renders a Primary danger button 1`] = `
+.c0 {
+  background: #D32F2F;
+  border-radius: 0.5rem;
+  border: 2px solid #D32F2F;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.c0:hover {
+  background: #F44336;
+}
+
+.c0:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #757575;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`PrimaryButton renders a disabled Primary button 1`] = `
+.c0 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.c0:hover {
+  background: #C5CAE9;
+}
+
+.c0:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #757575;
+}
+
+<button
+  className="c0"
+  disabled={true}
+/>
+`;
+
+exports[`SecondaryButton renders a SecondaryButton Primary button 1`] = `
+.c0 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background: #FFFFFF;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+}
+
+.c0:hover {
+  background: #C5CAE9;
+}
+
+.c0:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #757575;
+}
+
+.c0:hover {
+  background: #3F51B5;
+  color: #FFFFFF;
+}
+
+.c0:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  color: #BDBDBD;
+  cursor: auto;
+}
+
+<button
+  className="sc-AxjAm c0"
+  disabled={true}
+/>
+`;
+
+exports[`SecondaryButton renders a SecondaryButton button 1`] = `
+.c0 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background: #FFFFFF;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+}
+
+.c0:hover {
+  background: #C5CAE9;
+}
+
+.c0:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #757575;
+}
+
+.c0:hover {
+  background: #3F51B5;
+  color: #FFFFFF;
+}
+
+.c0:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  color: #BDBDBD;
+  cursor: auto;
+}
+
+<button
+  className="sc-AxjAm c0"
+/>
+`;
+
+exports[`SecondaryButton renders a SecondaryButton danger button 1`] = `
+.c0 {
+  background: #D32F2F;
+  border-radius: 0.5rem;
+  border: 2px solid #D32F2F;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background: #FFFFFF;
+  border: 2px solid #D32F2F;
+  color: #D32F2F;
+}
+
+.c0:hover {
+  background: #F44336;
+}
+
+.c0:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #757575;
+}
+
+.c0:hover {
+  background: #D32F2F;
+  color: #FFFFFF;
+}
+
+.c0:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  color: #BDBDBD;
+  cursor: auto;
+}
+
+<button
+  className="sc-AxjAm c0"
+/>
+`;
