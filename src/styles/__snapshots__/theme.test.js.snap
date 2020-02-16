@@ -18,6 +18,7 @@ Object {
   "primary": "#3F51B5",
   "primaryDark": "#303F9F",
   "primaryLight": "#C5CAE9",
+  "red": "#D32F2F",
   "secondaryIcon": "#757575",
   "secondaryText": "#757575",
   "shortTransition": "0.1s",

@@ -8,6 +8,8 @@ import {
   forward
 } from '../../state/actions/actions';
 import { SecondaryButton } from '../button';
+import Indicator from '../indicator/Indicator';
+import { theme } from '../../styles';
 
 export function RecordingControls(props) {
   const {
@@ -22,6 +24,7 @@ export function RecordingControls(props) {
 
   return (
     <div className='recording-controls'>
+      <Indicator pulsing fill={theme.red} disabled={!recordingEnabled} />
       <SecondaryButton onClick={onToggleRecording}>
         {recordingEnabled ? 'Stop' : 'Start'}
       </SecondaryButton>
