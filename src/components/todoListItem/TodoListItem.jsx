@@ -6,6 +6,7 @@ import InlineEditable from '../inline-editable';
 import AutosizingTextarea from '../autosizingTextarea';
 import Card from '../card';
 import Input from '../input';
+import Name from './Name';
 
 export function TodoListItem(props) {
   const {
@@ -18,17 +19,11 @@ export function TodoListItem(props) {
   const descriptionInStore = props.description;
 
   const [description, setDescription] = useState(descriptionInStore);
-  const [name, setName] = useState(nameInStore);
 
   useEffect(() => {
     // Set description state if stored description changes
     setDescription(descriptionInStore);
   }, [descriptionInStore]);
-
-  useEffect(() => {
-    // Set name state if stored name changes
-    setName(nameInStore);
-  }, [nameInStore]);
 
   function remove() {
     onRemove(id);
@@ -46,15 +41,7 @@ export function TodoListItem(props) {
   return (
     <Card>
       <div>
-        <InlineEditable
-          value={name}
-          placeholder={' '}
-          onSubmit={updateName}
-        >
-          <Input
-            onChange={e => setName(e.target.value)}
-          />
-        </InlineEditable>
+        <Name name={nameInStore} updateName={updateName} />
         <button onClick={remove}>
           Remove
         </button>
