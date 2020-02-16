@@ -8,6 +8,7 @@ import {
   PrimaryButton,
   SecondaryButton
 } from '../button';
+import Input from '../input';
 
 import './addTodoListItem.scss';
 
@@ -45,7 +46,7 @@ export function AddTodoListItem(props) {
       <PrimaryButton onClick={() => setAddingItem(true)}>New todo</PrimaryButton>
     ) : (
       <div className='todo-list__new-item'>
-        <input
+        <Input
           placeholder={'Enter a name'}
           value={name}
           onChange={e => setName(e.target.value)}

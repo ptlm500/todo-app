@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
 import InlineEditable from '../inline-editable';
 import TextareaAutosize from 'react-autosize-textarea';
+import Input from '../input';
 
 import './todoListItem.scss';
 
@@ -51,7 +52,7 @@ export function TodoListItem(props) {
           placeholder={' '}
           onSubmit={updateName}
         >
-          <input
+          <Input
             onChange={e => setName(e.target.value)}
           />
         </InlineEditable>

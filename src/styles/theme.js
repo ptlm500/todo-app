@@ -15,6 +15,7 @@ export default {
   danger: '#D32F2F',
   dangerLight: '#F44336',
   green: '#388E3C',
+  font: '\'Segoe UI\' \'HelveticaNeue-Light\' sans-serif',
   defaultRadius: '0.5rem',
   shortTransition: '0.1s',
   longTransition: '0.3s'
