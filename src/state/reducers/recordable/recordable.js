@@ -29,7 +29,8 @@ export default function recordable(reducer) {
             )
         );
       }
-      return state;
+      // There is no state in the past, set initial reducer state
+      return state.set('present', reducer(undefined, {}));
     }
     case FORWARD: {
       if (future.size !== 0) {
@@ -43,6 +44,7 @@ export default function recordable(reducer) {
             .set('future', newFuture)
         );
       }
+      // There is no state in the future, we can't go there!
       return state;
     }
     case CLEAR_RECORDING: {

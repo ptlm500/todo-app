@@ -2,7 +2,8 @@ import { fromJS, List } from 'immutable';
 import recordable from './recordable';
 import { CLEAR_RECORDING, BACK, FORWARD, TOGGLE_RECORDING } from './recordableActions';
 
-const mockReducer = jest.fn(() => 'wrapped-reducer-state');
+const initialWrappedReducerState = 'wrapped-reducer-state';
+const mockReducer = jest.fn(() => initialWrappedReducerState);
 let reducerWithRecordable;
 
 beforeEach(() => {
@@ -25,7 +26,7 @@ describe('recordable', () => {
   it('sets the initial state correctly', () => {
     const expectedState = fromJS({
       past: [],
-      present: 'wrapped-reducer-state',
+      present: initialWrappedReducerState,
       future: [],
       recordingEnabled: true
     });
@@ -36,7 +37,7 @@ describe('recordable', () => {
   it('doesn\'t update past and future when new present is equal to present', () => {
     const expectedState = fromJS({
       past: [0, 1],
-      present: 'wrapped-reducer-state',
+      present: initialWrappedReducerState,
       future: [3],
       recordingEnabled: true
     });
@@ -48,7 +49,7 @@ describe('recordable', () => {
   it('sets previous present value into past and clears future when a non-recordable action is passed', () => {
     const expectedState = fromJS({
       past: [0, 1, 2],
-      present: 'wrapped-reducer-state',
+      present: initialWrappedReducerState,
       future: [],
       recordingEnabled: true
     });
@@ -84,7 +85,7 @@ describe('recordable', () => {
   it('updates the state correctly when a BACK action is passed and there is no past', () => {
     const expectedState = fromJS({
       past: [],
-      present: 2,
+      present: initialWrappedReducerState,
       future: [3],
       recordingEnabled: true
     });

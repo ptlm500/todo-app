@@ -11,7 +11,6 @@ import {
 export function RecordingControls(props) {
   const {
     recordingEnabled,
-    disableBack,
     disableForward,
     disableClear,
     onToggleRecording,
@@ -25,7 +24,7 @@ export function RecordingControls(props) {
       <button onClick={onToggleRecording}>
         {recordingEnabled ? 'Stop' : 'Start'}
       </button>
-      <button onClick={onBack} disabled={disableBack}>
+      <button onClick={onBack}>
         Back
       </button>
       <button onClick={onForward} disabled={disableForward}>
@@ -40,7 +39,6 @@ export function RecordingControls(props) {
 
 RecordingControls.propTypes = {
   recordingEnabled: PropTypes.bool.isRequired,
-  disableBack: PropTypes.bool,
   disableForward: PropTypes.bool,
   disableClear: PropTypes.bool,
   onToggleRecording: PropTypes.func.isRequired,
@@ -55,7 +53,6 @@ const mapStateToProps = (state) => {
 
   return {
     recordingEnabled: state.todos.get('recordingEnabled'),
-    disableBack: pastSize === 0,
     disableForward: futureSize === 0,
     disableClear: pastSize === 0 && futureSize === 0
   };
