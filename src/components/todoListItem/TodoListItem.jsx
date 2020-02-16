@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
 import InlineEditable from '../inline-editable';
 import TextareaAutosize from 'react-autosize-textarea';
+import Card from '../card';
 import Input from '../input';
-
-import './todoListItem.scss';
 
 export function TodoListItem(props) {
   const {
@@ -45,7 +44,7 @@ export function TodoListItem(props) {
   }
 
   return (
-    <li className='todo-list__item'>
+    <Card>
       <div>
         <InlineEditable
           value={name}
@@ -70,7 +69,7 @@ export function TodoListItem(props) {
         />
       </InlineEditable>
       <a>{creationDate}</a>
-    </li>
+    </Card>
   );
 }
 
