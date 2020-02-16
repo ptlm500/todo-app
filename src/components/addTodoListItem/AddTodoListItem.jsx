@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { addTodo } from '../../state/actions/actions';
 import { v4 as uuid } from 'uuid';
 import AutosizingTextarea from '../autosizingTextarea';
+import Card from '../card';
 import {
   PrimaryButton,
   SecondaryButton
@@ -45,7 +46,7 @@ export function AddTodoListItem(props) {
     !addingItem ? (
       <PrimaryButton onClick={() => setAddingItem(true)}>New todo</PrimaryButton>
     ) : (
-      <div className='todo-list__new-item'>
+      <Card>
         <Input
           placeholder={'Enter a name'}
           value={name}
@@ -60,7 +61,7 @@ export function AddTodoListItem(props) {
           <SecondaryButton onClick={cancel}>Cancel</SecondaryButton>
           <PrimaryButton onClick={submitTodo}>Add</PrimaryButton>
         </div>
-      </div>
+      </Card>
     )
   );
 }
