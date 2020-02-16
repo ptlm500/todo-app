@@ -52,7 +52,7 @@ export const StyledRecordingControls = styled(RecordingControls)`
   background-color: ${theme.primaryDark};
   position: fixed;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 5%;
 
   > * {
     margin: 0 0.5rem;
