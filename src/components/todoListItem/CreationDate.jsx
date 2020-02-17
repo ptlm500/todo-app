@@ -17,6 +17,8 @@ function CreationDate(props) {
         year="numeric"
         month="long"
         day="2-digit"
+        hour="numeric"
+        minute="numeric"
       />
     </a>
   );
