@@ -63,7 +63,7 @@ describe('InlineEditable', () => {
     };
 
     expect(testRender(props)).toMatchSnapshot();
-  })
+  });
 
   it('renders a placeholder when no value is provided', () => {
     expect(testRender({placeholder: 'test placeholder'})).toMatchSnapshot();
