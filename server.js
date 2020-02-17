@@ -24,8 +24,10 @@ app.get('/api/locale', (req, res) => {
   const locale = detectLocale(req);
   console.log('/api/locale sending locale', locale);
   res.cookie('locale', locale, { maxAge: (new Date() * 0.001) + (365 * 24 * 3600) });
+  res.status(200).end();
 });
 
 app.get('*', (req, res) =>{
   res.sendFile(path.join(__dirname, '/client/build/index.html'));
+  res.status(200).end();
 });
