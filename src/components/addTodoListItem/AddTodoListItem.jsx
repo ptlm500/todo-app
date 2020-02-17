@@ -7,11 +7,13 @@ import AutosizingTextarea from '../autosizingTextarea';
 import Card from '../card';
 import {
   PrimaryButton,
-  SecondaryButton
+  SecondaryButton,
 } from '../button';
+import IconButton from '../iconButton';
 import Input from '../input';
 
 import './addTodoListItem.scss';
+import { NewTodo } from '../../icons';
 
 function generateTodo(name, description) {
   return {
@@ -44,7 +46,7 @@ export function AddTodoListItem(props) {
 
   return (
     !addingItem ? (
-      <PrimaryButton onClick={() => setAddingItem(true)}>New todo</PrimaryButton>
+      <IconButton onClick={() => setAddingItem(true)}><NewTodo /></IconButton>
     ) : (
       <Card>
         <Input

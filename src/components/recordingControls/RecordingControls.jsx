@@ -11,6 +11,7 @@ import {
 import { SecondaryButton } from '../button';
 import Indicator from '../indicator/Indicator';
 import { theme } from '../../styles';
+import { Undo, Redo } from '../../icons';
 
 function RecordingControls(props) {
   const {
@@ -34,10 +35,10 @@ function RecordingControls(props) {
         Clear
       </SecondaryButton>
       <SecondaryButton onClick={onBack}>
-        Back
+        <Undo />
       </SecondaryButton>
       <SecondaryButton onClick={onForward} disabled={disableForward}>
-        Forward
+        <Redo />
       </SecondaryButton>
     </div>
   );

@@ -5,8 +5,9 @@ import { removeTodo, updateTodo } from '../../state/actions/actions';
 import InlineEditable from '../inline-editable';
 import AutosizingTextarea from '../autosizingTextarea';
 import Card from '../card';
-import Input from '../input';
+import IconButton from '../iconButton';
 import Name from './Name';
+import { Delete } from '../../icons';
 
 export function TodoListItem(props) {
   const {
@@ -42,9 +43,9 @@ export function TodoListItem(props) {
     <Card>
       <div>
         <Name name={nameInStore} updateName={updateName} />
-        <button onClick={remove}>
-          Remove
-        </button>
+        <IconButton onClick={remove}>
+          <Delete />
+        </IconButton>
       </div>
       <InlineEditable
         value={description}
