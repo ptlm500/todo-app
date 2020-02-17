@@ -9,7 +9,11 @@ import RecordingControls from './components/recordingControls';
 
 import './app.scss';
 
+const getLocale = () => fetch('/api/locale');
+
 export default function App() {
+  getLocale();
+
   return (
     <Provider store={store}>
       <IntlProvider

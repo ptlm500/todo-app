@@ -9,7 +9,10 @@ module.exports = merge(common, {
   devServer: {
     contentBase: path.join(__dirname, 'dist/'),
     port: 3000,
-    hotOnly: true
+    hotOnly: true,
+    proxy: {
+      '/api': 'http://localhost:8080'
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
