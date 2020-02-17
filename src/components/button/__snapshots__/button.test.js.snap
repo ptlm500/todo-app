@@ -11,16 +11,24 @@ exports[`PrimaryButton renders a Primary button 1`] = `
   padding: 0.25rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  fill: #FFFFFF;
 }
 
-.c0:hover {
+.c0 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c0:hover:not([disabled]) {
   background: #C5CAE9;
 }
 
 .c0:disabled {
   border: 2px solid #BDBDBD;
   background: #BDBDBD;
-  color: #757575;
+  color: #BDBDBD;
+  fill: #3F51B5;
 }
 
 <button
@@ -39,16 +47,24 @@ exports[`PrimaryButton renders a Primary danger button 1`] = `
   padding: 0.25rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  fill: #FFFFFF;
 }
 
-.c0:hover {
+.c0 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c0:hover:not([disabled]) {
   background: #F44336;
 }
 
 .c0:disabled {
   border: 2px solid #BDBDBD;
   background: #BDBDBD;
-  color: #757575;
+  color: #BDBDBD;
+  fill: #3F51B5;
 }
 
 <button
@@ -67,16 +83,24 @@ exports[`PrimaryButton renders a disabled Primary button 1`] = `
   padding: 0.25rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  fill: #FFFFFF;
 }
 
-.c0:hover {
+.c0 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c0:hover:not([disabled]) {
   background: #C5CAE9;
 }
 
 .c0:disabled {
   border: 2px solid #BDBDBD;
   background: #BDBDBD;
-  color: #757575;
+  color: #BDBDBD;
+  fill: #3F51B5;
 }
 
 <button
@@ -96,30 +120,39 @@ exports[`SecondaryButton renders a SecondaryButton Primary button 1`] = `
   padding: 0.25rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  fill: #FFFFFF;
   background: #FFFFFF;
   border: 2px solid #3F51B5;
   color: #3F51B5;
+  fill: #3F51B5;
 }
 
-.c0:hover {
+.c0 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c0:hover:not([disabled]) {
   background: #C5CAE9;
 }
 
 .c0:disabled {
   border: 2px solid #BDBDBD;
   background: #BDBDBD;
-  color: #757575;
+  color: #BDBDBD;
+  fill: #3F51B5;
 }
 
-.c0:hover {
+.c0:hover:not([disabled]) {
   background: #3F51B5;
   color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background: #FFFFFF;
   border: 2px solid #BDBDBD;
-  color: #BDBDBD;
   cursor: auto;
 }
 
@@ -140,30 +173,39 @@ exports[`SecondaryButton renders a SecondaryButton button 1`] = `
   padding: 0.25rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  fill: #FFFFFF;
   background: #FFFFFF;
   border: 2px solid #3F51B5;
   color: #3F51B5;
+  fill: #3F51B5;
 }
 
-.c0:hover {
+.c0 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c0:hover:not([disabled]) {
   background: #C5CAE9;
 }
 
 .c0:disabled {
   border: 2px solid #BDBDBD;
   background: #BDBDBD;
-  color: #757575;
+  color: #BDBDBD;
+  fill: #3F51B5;
 }
 
-.c0:hover {
+.c0:hover:not([disabled]) {
   background: #3F51B5;
   color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background: #FFFFFF;
   border: 2px solid #BDBDBD;
-  color: #BDBDBD;
   cursor: auto;
 }
 
@@ -183,30 +225,39 @@ exports[`SecondaryButton renders a SecondaryButton danger button 1`] = `
   padding: 0.25rem 1rem;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  fill: #FFFFFF;
   background: #FFFFFF;
   border: 2px solid #D32F2F;
   color: #D32F2F;
+  fill: #D32F2F;
 }
 
-.c0:hover {
+.c0 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c0:hover:not([disabled]) {
   background: #F44336;
 }
 
 .c0:disabled {
   border: 2px solid #BDBDBD;
   background: #BDBDBD;
-  color: #757575;
+  color: #BDBDBD;
+  fill: #3F51B5;
 }
 
-.c0:hover {
+.c0:hover:not([disabled]) {
   background: #D32F2F;
   color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background: #FFFFFF;
   border: 2px solid #BDBDBD;
-  color: #BDBDBD;
   cursor: auto;
 }
 
