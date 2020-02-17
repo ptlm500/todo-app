@@ -43,7 +43,7 @@ export function TodoListItem(props) {
     <Card>
       <div>
         <Name name={nameInStore} updateName={updateName} />
-        <IconButton onClick={remove}>
+        <IconButton size={'small'} onClick={remove}>
           <Delete />
         </IconButton>
       </div>
