@@ -1,5 +1,5 @@
 import React from 'react';
-import TestRenderer, { act } from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
 import InlineEditable from './InlineEditable';
 
 const mockFocus = jest.fn();
@@ -12,10 +12,10 @@ const defaultProps = {
 };
 
 function testRender(props = defaultProps, children) {
-  let renderer;
+  let tree;
 
   act(() => {
-    renderer = TestRenderer.create(
+    tree = renderer.create(
       <InlineEditable {...props}>
         {children ? children : <input />}
       </InlineEditable>,
@@ -28,7 +28,7 @@ function testRender(props = defaultProps, children) {
     );
   });
 
-  return renderer;
+  return tree;
 }
 
 beforeEach(() => {
@@ -40,7 +40,7 @@ describe('InlineEditable', () => {
     expect.assertions(1);
     try {
       act(() =>
-        TestRenderer.create(
+        renderer.create(
           <InlineEditable>
             <input/>
             <input/>
@@ -54,6 +54,15 @@ describe('InlineEditable', () => {
 
   it('renders a value when provided', () => {
     expect(testRender()).toMatchSnapshot();
+  });
+
+  it('sets a className on the outer div when provided', () => {
+    const props = {
+      className: 'test-class',
+      ...defaultProps
+    };
+
+    expect(testRender(props)).toMatchSnapshot();
   });
 
   it('renders a placeholder when no value is provided', () => {
@@ -73,63 +82,63 @@ describe('InlineEditable', () => {
     }
 
     it('triggers when the edit-trigger is clicked', () => {
-      const testRenderer = testRender();
+      const tree = testRender();
 
-      enterEditMode(testRenderer);
+      enterEditMode(tree);
 
       expect(mockFocus).toHaveBeenCalledTimes(1);
 
-      const input = testRenderer.root.findByType('input');
+      const input = tree.root.findByType('input');
 
       expect(input.props.value).toBe(defaultProps.value);
       expect(input.props.placeholder).toBe(defaultProps.placeholder);
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
 
     it('exits when onBlur of the editContainer is called, calling onSubmit', () => {
-      const testRenderer = testRender();
+      const tree = testRender();
 
-      enterEditMode(testRenderer);
+      enterEditMode(tree);
 
-      const editContainer = testRenderer.root
+      const editContainer = tree.root
         .findByProps({className: 'inline-editable__edit-container'});
 
       act(() => editContainer.props.onBlur());
 
       expect(mockOnSubmit).toHaveBeenCalledWith(defaultProps.value);
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
 
     it('ignores non-escape key presses inside the editContainer', () => {
-      const testRenderer = testRender();
+      const tree = testRender();
 
-      enterEditMode(testRenderer);
+      enterEditMode(tree);
 
-      const editContainer = testRenderer.root
+      const editContainer = tree.root
         .findByProps({className: 'inline-editable__edit-container'});
 
       act(() => editContainer.props.onKeyDown({key: 'Enter'}));
 
       expect(mockOnSubmit).toHaveBeenCalledTimes(0);
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
 
     it('exits when the Escape key is pressed inside the editContainer, calling onSubmit', () => {
-      const testRenderer = testRender();
+      const tree = testRender();
 
-      enterEditMode(testRenderer);
+      enterEditMode(tree);
 
-      const editContainer = testRenderer.root
+      const editContainer = tree.root
         .findByProps({className: 'inline-editable__edit-container'});
 
       act(() => editContainer.props.onKeyDown({key: 'Escape'}));
 
       expect(mockOnSubmit).toHaveBeenCalledWith(defaultProps.value);
 
-      expect(testRenderer).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
   });
 });

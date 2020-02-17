@@ -4,6 +4,7 @@ import './InlineEditable.scss';
 
 export default function InlineEditable(props) {
   const {
+    className,
     value,
     placeholder,
     children,
@@ -42,7 +43,9 @@ export default function InlineEditable(props) {
   }
 
   return (
-    <div className='inline-editable'>
+    <div
+      className={className ? `${className} inline-editable` : 'inline-editable'}
+    >
       {
         editing ? (
           <div
@@ -68,6 +71,7 @@ export default function InlineEditable(props) {
 }
 
 InlineEditable.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
   value: PropTypes.string,
   placeholder: PropTypes.string,

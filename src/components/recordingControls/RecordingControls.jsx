@@ -1,15 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import {
   toggleRecording,
   clearRecording,
   back,
   forward
 } from '../../state/actions/actions';
+import { SecondaryButton } from '../button';
+import Indicator from '../indicator/Indicator';
+import { theme } from '../../styles';
+import { Undo, Redo } from '../../icons';
 
-export function RecordingControls(props) {
+function RecordingControls(props) {
   const {
+    className,
     recordingEnabled,
     disableForward,
     disableClear,
@@ -20,24 +26,50 @@ export function RecordingControls(props) {
   } = props;
 
   return (
-    <div className='recording-controls'>
-      <button onClick={onToggleRecording}>
+    <div className={className}>
+      <Indicator pulsing fill={theme.red} disabled={!recordingEnabled} />
+      <SecondaryButton onClick={onToggleRecording}>
         {recordingEnabled ? 'Stop' : 'Start'}
-      </button>
-      <button onClick={onBack}>
-        Back
-      </button>
-      <button onClick={onForward} disabled={disableForward}>
-        Forward
-      </button>
-      <button onClick={onClearRecording} disabled={disableClear}>
+      </SecondaryButton>
+      <SecondaryButton danger onClick={onClearRecording} disabled={disableClear}>
         Clear
-      </button>
+      </SecondaryButton>
+      <SecondaryButton onClick={onBack}>
+        <Undo />
+      </SecondaryButton>
+      <SecondaryButton onClick={onForward} disabled={disableForward}>
+        <Redo />
+      </SecondaryButton>
     </div>
   );
 }
 
+export const StyledRecordingControls = styled(RecordingControls)`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  background-color: ${theme.primaryDark};
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 5%;
+
+  > * {
+    margin: 0 0.5rem;
+
+    &:first-child {
+      margin: 0 1rem 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0 0.5rem;
+    }
+  }
+`;
+
 RecordingControls.propTypes = {
+  className: PropTypes.string.isRequired,
   recordingEnabled: PropTypes.bool.isRequired,
   disableForward: PropTypes.bool,
   disableClear: PropTypes.bool,
@@ -70,4 +102,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(RecordingControls);
+)(StyledRecordingControls);

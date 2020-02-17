@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Immutable from 'immutable';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import TodoListItem from '../todoListItem';
+import { theme } from '../../styles';
 
 function renderTodos(todos) {
   return Object.values(todos)
@@ -10,17 +12,28 @@ function renderTodos(todos) {
 }
 
 
-export function TodoList(props) {
-  const { todos } = props;
+function TodoList(props) {
+  const { className, todos } = props;
 
   return (
-    <ul>
+    <div className={className}>
       {renderTodos(todos)}
-    </ul>
+    </div>
   );
 }
 
+export const StyledTodoList = styled(TodoList)`
+  border-left: 1px solid ${theme.divider};
+
+  padding-left: 0.5rem;
+
+  > * {
+    margin: 1rem 0;
+  }
+`;
+
 TodoList.propTypes = {
+  className: PropTypes.string,
   todos: PropTypes.objectOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -33,7 +46,7 @@ export function Container(props) {
   const { todos } = props;
 
   return (
-    <TodoList todos={todos.toJS && todos.toJS()} />
+    <StyledTodoList todos={todos.toJS && todos.toJS()} />
   );
 }
 

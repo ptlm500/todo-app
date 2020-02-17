@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Indicator renders a disabled indicator 1`] = `
+.c0 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  -webkit-animation: none;
+  animation: none;
+  fill: #BDBDBD;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+<svg
+  className="c0"
+  viewBox="0 0 100 100"
+>
+  <circle
+    className="c1"
+    cx="50"
+    cy="50"
+    disabled={true}
+    fill="#fff"
+    r="50"
+  />
+</svg>
+`;
+
+exports[`Indicator renders an indicator 1`] = `
+.c0 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  -webkit-animation: none;
+  animation: none;
+  fill: #fff;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+<svg
+  className="c0"
+  viewBox="0 0 100 100"
+>
+  <circle
+    className="c1"
+    cx="50"
+    cy="50"
+    fill="#fff"
+    r="50"
+  />
+</svg>
+`;
+
+exports[`circlePulse matches the snapshot 1`] = `
+Keyframes {
+  "id": "sc-keyframes-ehXoqr",
+  "inject": [Function],
+  "name": "ehXoqr",
+  "stringifyArgs": Array [
+    "
+0% {
+  opacity: 1;
+}
+50% {
+  opacity: 0.5;
+}
+100%{
+  opacity: 1;
+}
+",
+    "ehXoqr",
+    "@keyframes",
+  ],
+  "toString": [Function],
+}
+`;
+
+exports[`pulsing Indicator renders a disabled pulsing indicator 1`] = `
+.c0 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  -webkit-animation: none;
+  animation: none;
+  fill: #BDBDBD;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+<svg
+  className="c0"
+  viewBox="0 0 100 100"
+>
+  <circle
+    className="c1"
+    cx="50"
+    cy="50"
+    disabled={true}
+    fill="#fff"
+    r="50"
+  />
+</svg>
+`;
+
+exports[`pulsing Indicator renders a pulsing indicator 1`] = `
+.c0 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  -webkit-animation: ehXoqr infinite 4s ease-in-out;
+  animation: ehXoqr infinite 4s ease-in-out;
+  fill: #fff;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+<svg
+  className="c0"
+  viewBox="0 0 100 100"
+>
+  <circle
+    className="c1"
+    cx="50"
+    cy="50"
+    fill="#fff"
+    r="50"
+  />
+</svg>
+`;
