@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
 import InlineEditable from '../inline-editable';
 import AutosizingTextarea from '../autosizingTextarea';
@@ -9,7 +10,7 @@ import IconButton from '../iconButton';
 import Name from './Name';
 import { Delete } from '../../icons';
 
-export function TodoListItem(props) {
+function TodoListItem(props) {
   const {
     id,
     creationDate,
@@ -40,13 +41,13 @@ export function TodoListItem(props) {
   }
 
   return (
-    <Card>
-      <div>
+    <TodoListCard>
+      <TodoListTitleRow>
         <Name name={nameInStore} updateName={updateName} />
         <IconButton size={'small'} onClick={remove}>
           <Delete />
         </IconButton>
-      </div>
+      </TodoListTitleRow>
       <InlineEditable
         value={description}
         placeholder={' '}
@@ -57,9 +58,19 @@ export function TodoListItem(props) {
         />
       </InlineEditable>
       <a>{creationDate}</a>
-    </Card>
+    </TodoListCard>
   );
 }
+
+const TodoListCard = styled(Card)`
+  min-width: 300px;
+`;
+
+const TodoListTitleRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+`;
 
 TodoListItem.propTypes = {
   id: PropTypes.string.isRequired,

@@ -39,4 +39,5 @@ Name.propTypes = {
 
 export default styled(Name)`
   font-size: 24px;
+  font-weight: 600;
 `;
