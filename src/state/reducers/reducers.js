@@ -8,13 +8,13 @@ export const initialState = fromJS({
     id: 'test-id',
     name: 'Test Todo',
     description: 'Pass all tests!',
-    creationDate: '1581549548'
+    creationDate: '1581549548000'
   },
   'test-id-2': {
     id: 'test-id-2',
     name: 'Test Todo 2',
     description: 'Style these things!',
-    creationDate: '1581549548'
+    creationDate: '1581549548000'
   }
 });
 

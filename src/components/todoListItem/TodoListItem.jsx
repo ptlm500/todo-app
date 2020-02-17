@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
-import InlineEditable from '../inline-editable';
-import AutosizingTextarea from '../autosizingTextarea';
 import Card from '../card';
+import CreationDate from './CreationDate';
+import Description from './Description';
 import IconButton from '../iconButton';
 import Name from './Name';
 import { Delete } from '../../icons';
@@ -13,51 +13,39 @@ import { Delete } from '../../icons';
 function TodoListItem(props) {
   const {
     id,
+    name,
+    description,
     creationDate,
     onRemove,
     onUpdate
   } = props;
-  const nameInStore = props.name;
-  const descriptionInStore = props.description;
-
-  const [description, setDescription] = useState(descriptionInStore);
-
-  useEffect(() => {
-    // Set description state if stored description changes
-    setDescription(descriptionInStore);
-  }, [descriptionInStore]);
 
   function remove() {
     onRemove(id);
   }
 
   function updateName(newName) {
-    newName !== nameInStore && onUpdate({id, name: newName});
+    newName !== name && onUpdate({id, name: newName});
   }
 
   function updateDescription(newDescription) {
-    newDescription !== descriptionInStore &&
+    newDescription !== description &&
       onUpdate({id, description: newDescription});
   }
 
   return (
     <TodoListCard>
       <TodoListTitleRow>
-        <Name name={nameInStore} updateName={updateName} />
+        <Name name={name} updateName={updateName} />
         <IconButton size={'small'} onClick={remove}>
           <Delete />
         </IconButton>
       </TodoListTitleRow>
-      <InlineEditable
-        value={description}
-        placeholder={' '}
-        onSubmit={updateDescription}
-      >
-        <AutosizingTextarea
-          onChange={e => setDescription(e.target.value)}
-        />
-      </InlineEditable>
-      <a>{creationDate}</a>
+      <Description
+        description={description}
+        updateDescription={updateDescription}
+      />
+      <CreationDate creationDate={creationDate} />
     </TodoListCard>
   );
 }
