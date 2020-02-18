@@ -6,6 +6,18 @@ import { renderWithIntl } from '../../../test/utils';
 import { StyledTodoList, Container } from './TodoList';
 import { TodoListItem } from '../todoListItem/TodoListItem';
 
+// Mocking transition group https://github.com/reactjs/react-transition-group/issues/208
+jest.mock('react-transition-group', () => {
+  return {
+    // eslint-disable-next-line react/prop-types
+    CSSTransition: function CSSTransition({children}) {
+      return (
+        <div>{children}</div>
+      );
+    }
+  };
+});
+
 const testTodos = {
   'test-id': {
     id: 'test-id',
@@ -20,17 +32,6 @@ const testTodos = {
     creationDate: '1581549548000'
   }
 };
-
-jest.mock('react-transition-group', () => {
-  return {
-    // eslint-disable-next-line react/prop-types
-    CSSTransition: function CSSTransition({children}) {
-      return (
-        <div>{children}</div>
-      );
-    }
-  };
-});
 
 describe('TodoList', () => {
   it('renders the correct number of todos, matching the snapshot', () => {

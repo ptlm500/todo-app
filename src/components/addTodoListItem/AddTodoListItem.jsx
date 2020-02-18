@@ -48,14 +48,19 @@ export function AddTodoListItem(props) {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
 
+  function clearState() {
+    setName('');
+    setDescription('');
+  }
+
   function submitTodo() {
     onAddTodo(generateTodo(name, description));
+    clearState();
     setAddingItem(false);
   }
 
   function cancel() {
-    setName('');
-    setDescription('');
+    clearState();
     setAddingItem(false);
   }
 
@@ -64,7 +69,12 @@ export function AddTodoListItem(props) {
 
   return (
     <>
-      {!addingItem && <IconButton onClick={() => setAddingItem(true)}><NewTodo /></IconButton>}
+      {
+        !addingItem &&
+        <IconButton id="add-item" onClick={() => setAddingItem(true)}>
+          <NewTodo />
+        </IconButton>
+      }
       <CSSTransition
         appear={true}
         exit={false}
@@ -75,24 +85,32 @@ export function AddTodoListItem(props) {
       >
         <AnimatedCard animationClass={animationClass} timeout={timeout}>
           <NameInput
+            id="name-input"
             placeholder={intl.formatMessage(messages.namePlaceholder)}
             value={name}
             onChange={e => setName(e.target.value)}
           />
           <DescriptionInput
+            id="description-input"
             placeholder={intl.formatMessage(messages.descriptionPlaceholder)}
             value={description}
             onChange={e => setDescription(e.target.value)}
           />
           <Actions>
-            <SecondaryButton onClick={cancel}>
+            <SecondaryButton
+              id="cancel"
+              onClick={cancel}
+            >
               <FormattedMessage
                 id="todo.addTodo.cancel"
                 description="Add todo cancel button text"
                 defaultMessage="Cancel"
               />
             </SecondaryButton>
-            <PrimaryButton onClick={submitTodo}>
+            <PrimaryButton
+              id="add"
+              onClick={submitTodo}
+            >
               <FormattedMessage
                 id="todo.addTodo.add"
                 description="Add todo add button text"
@@ -106,13 +124,13 @@ export function AddTodoListItem(props) {
   );
 }
 
-const NameInput = styled.input`
+export const NameInput = styled.input`
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 1rem;
 `;
 
-const DescriptionInput = styled(AutosizingTextarea)`
+export const DescriptionInput = styled(AutosizingTextarea)`
   margin-bottom: 1rem;
 `;
 
