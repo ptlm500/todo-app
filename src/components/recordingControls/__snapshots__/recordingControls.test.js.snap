@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordingControls renders StyledRecordingControls matching the snapshot when recording is disabled 1`] = `
+<div
+  className="sc-AxhUy bSinxW"
+>
+  <svg
+    className="sc-AxiKw bvQulp"
+    viewBox="0 0 100 100"
+  >
+    <circle
+      className="sc-AxhCb bxmskA"
+      cx="50"
+      cy="50"
+      disabled={true}
+      fill="#D32F2F"
+      r="50"
+    />
+  </svg>
+  <button
+    className="sc-AxjAm sc-AxirZ iraoip"
+    id="toggle-recording"
+    onClick={[MockFunction]}
+  >
+    Start
+  </button>
+  <button
+    className="sc-AxjAm sc-AxirZ cdVtEh"
+    disabled={true}
+    id="clear"
+    onClick={[MockFunction]}
+  >
+    Clear
+  </button>
+  <button
+    className="sc-AxjAm sc-AxirZ iraoip"
+    id="undo"
+    onClick={[MockFunction]}
+  >
+    <svg
+      height="9px"
+      version="1.1"
+      viewBox="0 0 21 9"
+      width="21px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        Undo
+      </title>
+      <g
+        fill="none"
+        fillRule="evenodd"
+        stroke="none"
+        strokeWidth="1"
+      >
+        <g
+          transform="translate(-238.000000, -1533.000000)"
+        >
+          <g
+            transform="translate(100.000000, 1428.000000)"
+          >
+            <g
+              id="Outlined-/-Content-/-undo"
+              transform="translate(136.000000, 98.000000)"
+            >
+              <g>
+                <polygon
+                  id="Path"
+                  points="0 0 24 0 24 24 0 24"
+                />
+                <path
+                  d="M12.5,8 C9.85,8 7.45,8.99 5.6,10.6 L2,7 L2,16 L11,16 L7.38,12.38 C8.77,11.22 10.54,10.5 12.5,10.5 C16.04,10.5 19.05,12.81 20.1,16 L22.47,15.22 C21.08,11.03 17.15,8 12.5,8 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
+  <button
+    className="sc-AxjAm sc-AxirZ iraoip"
+    disabled={true}
+    id="redo"
+    onClick={[MockFunction]}
+  >
+    <svg
+      height="9px"
+      version="1.1"
+      viewBox="0 0 21 9"
+      width="21px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        Redo
+      </title>
+      <g
+        fill="none"
+        fillRule="evenodd"
+        stroke="none"
+        strokeWidth="1"
+      >
+        <g
+          transform="translate(-747.000000, -1533.000000)"
+        >
+          <g
+            transform="translate(100.000000, 1428.000000)"
+          >
+            <g
+              id="Outlined-/-Content-/-redo"
+              transform="translate(646.000000, 98.000000)"
+            >
+              <g>
+                <polygon
+                  id="Path"
+                  points="0 0 24 0 24 24 0 24"
+                />
+                <path
+                  d="M18.4,10.6 C16.55,8.99 14.15,8 11.5,8 C6.85,8 2.92,11.03 1.54,15.22 L3.9,16 C4.95,12.81 7.95,10.5 11.5,10.5 C13.45,10.5 15.23,11.22 16.62,12.38 L13,16 L22,16 L22,7 L18.4,10.6 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`RecordingControls renders StyledRecordingControls matching the snapshot when recording is enabled 1`] = `
+<div
+  className="sc-AxhUy bSinxW"
+>
+  <svg
+    className="sc-AxiKw bvQulp"
+    viewBox="0 0 100 100"
+  >
+    <circle
+      className="sc-AxhCb dmbjDf"
+      cx="50"
+      cy="50"
+      disabled={false}
+      fill="#D32F2F"
+      r="50"
+    />
+  </svg>
+  <button
+    className="sc-AxjAm sc-AxirZ iraoip"
+    id="toggle-recording"
+    onClick={[MockFunction]}
+  >
+    Stop
+  </button>
+  <button
+    className="sc-AxjAm sc-AxirZ cdVtEh"
+    disabled={true}
+    id="clear"
+    onClick={[MockFunction]}
+  >
+    Clear
+  </button>
+  <button
+    className="sc-AxjAm sc-AxirZ iraoip"
+    id="undo"
+    onClick={[MockFunction]}
+  >
+    <svg
+      height="9px"
+      version="1.1"
+      viewBox="0 0 21 9"
+      width="21px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        Undo
+      </title>
+      <g
+        fill="none"
+        fillRule="evenodd"
+        stroke="none"
+        strokeWidth="1"
+      >
+        <g
+          transform="translate(-238.000000, -1533.000000)"
+        >
+          <g
+            transform="translate(100.000000, 1428.000000)"
+          >
+            <g
+              id="Outlined-/-Content-/-undo"
+              transform="translate(136.000000, 98.000000)"
+            >
+              <g>
+                <polygon
+                  id="Path"
+                  points="0 0 24 0 24 24 0 24"
+                />
+                <path
+                  d="M12.5,8 C9.85,8 7.45,8.99 5.6,10.6 L2,7 L2,16 L11,16 L7.38,12.38 C8.77,11.22 10.54,10.5 12.5,10.5 C16.04,10.5 19.05,12.81 20.1,16 L22.47,15.22 C21.08,11.03 17.15,8 12.5,8 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
+  <button
+    className="sc-AxjAm sc-AxirZ iraoip"
+    disabled={true}
+    id="redo"
+    onClick={[MockFunction]}
+  >
+    <svg
+      height="9px"
+      version="1.1"
+      viewBox="0 0 21 9"
+      width="21px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        Redo
+      </title>
+      <g
+        fill="none"
+        fillRule="evenodd"
+        stroke="none"
+        strokeWidth="1"
+      >
+        <g
+          transform="translate(-747.000000, -1533.000000)"
+        >
+          <g
+            transform="translate(100.000000, 1428.000000)"
+          >
+            <g
+              id="Outlined-/-Content-/-redo"
+              transform="translate(646.000000, 98.000000)"
+            >
+              <g>
+                <polygon
+                  id="Path"
+                  points="0 0 24 0 24 24 0 24"
+                />
+                <path
+                  d="M18.4,10.6 C16.55,8.99 14.15,8 11.5,8 C6.85,8 2.92,11.03 1.54,15.22 L3.9,16 C4.95,12.81 7.95,10.5 11.5,10.5 C13.45,10.5 15.23,11.22 16.62,12.38 L13,16 L22,16 L22,7 L18.4,10.6 Z"
+                  fill="currentColor"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
+</div>
+`;
