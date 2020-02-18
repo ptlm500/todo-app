@@ -6,9 +6,9 @@ const HORIZONTAL_PADDING = 1;
 const VERTICAL_PADDING = 0.25;
 
 export const PrimaryButton = styled.button`
-  background: ${props => props.danger ? theme.danger : theme.primary};
+  background: ${props => props.danger ? theme.dangerLight : theme.primary};
   border-radius: ${theme.defaultRadius};
-  border: 2px solid ${props => props.danger ? theme.danger : theme.primary};
+  border: 2px solid ${props => props.danger ? theme.dangerLight : theme.primary};
   cursor: pointer;
   color: ${theme.invertedText};
   height: ${HEIGHT}rem;
@@ -24,7 +24,8 @@ export const PrimaryButton = styled.button`
   fill: ${theme.invertedIcon};
 
   &:hover:not([disabled]) {
-    background: ${props => props.danger ? theme.dangerLight : theme.primaryLight};
+    background: ${props => props.danger ? theme.dangerLight : theme.primaryDark};
+    border: 2px solid ${props => props.danger ? theme.dangerLight : theme.primaryDark};
   }
 
   &:disabled {

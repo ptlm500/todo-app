@@ -1,12 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useIntl, defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+  title: {
+    id: 'todo.icons.delete.title',
+    defaultMessage: 'Delete',
+    description: 'Delete icon title'
+  }
+});
 
 // Icon from https://freeicons.io/
 export default function Delete(props) {
-  const { title = 'Delete' } = props;
+  const { title } = props;
+  const intl = useIntl();
+
   return (
     <svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <title>{title}</title>
+      <title>{title || intl.formatMessage(messages.title)}</title>
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g transform="translate(-207.000000, -245.000000)">
           <g transform="translate(100.000000, 100.000000)">

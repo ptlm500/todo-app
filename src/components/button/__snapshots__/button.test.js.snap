@@ -21,7 +21,8 @@ exports[`PrimaryButton renders a Primary button 1`] = `
 }
 
 .c0:hover:not([disabled]) {
-  background: #C5CAE9;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 .c0:disabled {
@@ -38,9 +39,9 @@ exports[`PrimaryButton renders a Primary button 1`] = `
 
 exports[`PrimaryButton renders a Primary danger button 1`] = `
 .c0 {
-  background: #D32F2F;
+  background: #F44336;
   border-radius: 0.5rem;
-  border: 2px solid #D32F2F;
+  border: 2px solid #F44336;
   cursor: pointer;
   color: #FFFFFF;
   height: 2rem;
@@ -58,6 +59,7 @@ exports[`PrimaryButton renders a Primary danger button 1`] = `
 
 .c0:hover:not([disabled]) {
   background: #F44336;
+  border: 2px solid #F44336;
 }
 
 .c0:disabled {
@@ -93,7 +95,8 @@ exports[`PrimaryButton renders a disabled Primary button 1`] = `
 }
 
 .c0:hover:not([disabled]) {
-  background: #C5CAE9;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 .c0:disabled {
@@ -134,7 +137,8 @@ exports[`SecondaryButton renders a SecondaryButton Primary button 1`] = `
 }
 
 .c0:hover:not([disabled]) {
-  background: #C5CAE9;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 .c0:disabled {
@@ -187,7 +191,8 @@ exports[`SecondaryButton renders a SecondaryButton button 1`] = `
 }
 
 .c0:hover:not([disabled]) {
-  background: #C5CAE9;
+  background: #303F9F;
+  border: 2px solid #303F9F;
 }
 
 .c0:disabled {
@@ -216,9 +221,9 @@ exports[`SecondaryButton renders a SecondaryButton button 1`] = `
 
 exports[`SecondaryButton renders a SecondaryButton danger button 1`] = `
 .c0 {
-  background: #D32F2F;
+  background: #F44336;
   border-radius: 0.5rem;
-  border: 2px solid #D32F2F;
+  border: 2px solid #F44336;
   cursor: pointer;
   color: #FFFFFF;
   height: 2rem;
@@ -240,6 +245,7 @@ exports[`SecondaryButton renders a SecondaryButton danger button 1`] = `
 
 .c0:hover:not([disabled]) {
   background: #F44336;
+  border: 2px solid #F44336;
 }
 
 .c0:disabled {

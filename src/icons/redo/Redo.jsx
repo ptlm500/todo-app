@@ -1,13 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useIntl, defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+  title: {
+    id: 'todo.icons.redo.title',
+    defaultMessage: 'Redo',
+    description: 'Redo icon title'
+  }
+});
 
 // Icon from https://freeicons.io/
 export default function Redo(props) {
   const { title = 'Redo' } = props;
+  const intl = useIntl();
 
   return (
     <svg width="21px" height="9px" viewBox="0 0 21 9" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <title>{title}</title>
+      <title>{title || intl.formatMessage(messages.title)}</title>
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g transform="translate(-747.000000, -1533.000000)">
           <g transform="translate(100.000000, 1428.000000)">

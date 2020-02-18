@@ -1,0 +1,17 @@
+[
+  {
+    "id": "todo.recControl.stop",
+    "description": "Stop recording button text",
+    "defaultMessage": "Stop"
+  },
+  {
+    "id": "todo.recControl.start",
+    "description": "Start recording button text",
+    "defaultMessage": "Start"
+  },
+  {
+    "id": "todo.recControl.clear",
+    "description": "Clear recording button text",
+    "defaultMessage": "Clear"
+  }
+]

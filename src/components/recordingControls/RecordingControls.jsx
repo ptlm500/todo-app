@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import { FormattedMessage } from 'react-intl';
 import {
   toggleRecording,
   clearRecording,
@@ -29,10 +30,26 @@ function RecordingControls(props) {
     <div className={className}>
       <Indicator pulsing fill={theme.red} disabled={!recordingEnabled} />
       <SecondaryButton onClick={onToggleRecording}>
-        {recordingEnabled ? 'Stop' : 'Start'}
+        {
+          recordingEnabled ?
+            <FormattedMessage
+              id="todo.recControl.stop"
+              description="Stop recording button text"
+              defaultMessage="Stop"
+            /> :
+            <FormattedMessage
+              id="todo.recControl.start"
+              description="Start recording button text"
+              defaultMessage="Start"
+            />
+        }
       </SecondaryButton>
       <SecondaryButton danger onClick={onClearRecording} disabled={disableClear}>
-        Clear
+        <FormattedMessage
+          id="todo.recControl.clear"
+          description="Clear recording button text"
+          defaultMessage="Clear"
+        />
       </SecondaryButton>
       <SecondaryButton onClick={onBack}>
         <Undo />
