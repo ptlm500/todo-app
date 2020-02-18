@@ -1,0 +1,13 @@
+{
+  "todo.addTodo.namePlaceholder": "Enter a name",
+  "todo.addTodo.descriptionPlaceholder": "Enter a description",
+  "todo.addTodo.cancel": "Cancel",
+  "todo.addTodo.add": "Add",
+  "todo.recControl.stop": "Stop",
+  "todo.recControl.start": "Start",
+  "todo.recControl.clear": "Clear",
+  "todo.icons.delete.title": "Delete",
+  "todo.icons.newTodo.title": "New todo",
+  "todo.icons.redo.title": "Redo",
+  "todo.icons.undo.title": "Undo"
+}

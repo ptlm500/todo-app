@@ -1,0 +1,22 @@
+[
+  {
+    "id": "todo.addTodo.namePlaceholder",
+    "description": "Placeholder message for the add todo name field",
+    "defaultMessage": "Enter a name"
+  },
+  {
+    "id": "todo.addTodo.descriptionPlaceholder",
+    "description": "Placeholder message for the add todo description field",
+    "defaultMessage": "Enter a description"
+  },
+  {
+    "id": "todo.addTodo.cancel",
+    "description": "Add todo cancel button text",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "todo.addTodo.add",
+    "description": "Add todo add button text",
+    "defaultMessage": "Add"
+  }
+]

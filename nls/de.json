@@ -1,0 +1,14 @@
+{
+  "todo.addTodo.namePlaceholder": "Geben Sie einen Namen",
+  "todo.addTodo.descriptionPlaceholder": "Geben Sie eine Beschreibung",
+  "todo.addTodo.cancel": "Kündigen",
+  "todo.addTodo.add": "Hinzufügen",
+  "todo.recControl.stop": "Halt",
+  "todo.recControl.start": "Starten",
+  "todo.recControl.clear": "Löschen",
+  "todo.icons.delete.title": "Löschen",
+  "todo.icons.newTodo.title": "Neue Aufgabe",
+  "todo.icons.redo.title": "Wiederholen",
+  "todo.icons.undo.title": "Rückgängig machen"
+}
+

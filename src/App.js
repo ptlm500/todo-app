@@ -10,6 +10,13 @@ import RecordingControls from './components/recordingControls';
 
 import './app.scss';
 
+import en from '../nls/en.json';
+import de from '../nls/de.json';
+const messages = {
+  'en': en,
+  'de': de
+};
+
 const getLocale = () => fetch('/api/locale');
 
 const locale = Cookie.get('locale') || 'en';
@@ -21,6 +28,8 @@ export default function App() {
     <Provider store={store}>
       <IntlProvider
         locale={locale}
+        key={locale}
+        messages={messages[locale]}
       >
         <div className='app'>
           <TodoList />

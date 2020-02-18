@@ -6,7 +6,15 @@
     },
     "production": {
       "presets": ["@babel/env", "@babel/preset-react"],
-      "plugins": ["babel-plugin-styled-components"]
+      "plugins": [
+        "babel-plugin-styled-components",
+        [
+          "babel-plugin-react-intl",
+          {
+            "messagesDir": "./public/messages/"
+          }
+        ]
+      ]
     },
     "test": {
       "presets": ["@babel/preset-env", "@babel/preset-react"],
