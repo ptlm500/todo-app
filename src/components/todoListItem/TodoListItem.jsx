@@ -14,7 +14,7 @@ import { CSSTransition } from 'react-transition-group';
 const timeout = 200;
 const animationClass = 'card-transition';
 
-function TodoListItem(props) {
+export function TodoListItem(props) {
   const {
     id,
     name,
@@ -38,28 +38,19 @@ function TodoListItem(props) {
   }
 
   return (
-    <CSSTransition
-      appear={true}
-      in={true}
-      exit={false}
-      classNames={animationClass}
-      timeout={timeout}
-      unmountOnExit
-    >
-      <TodoListCard animationClass={animationClass} timeout={timeout}>
-        <TodoListTitleRow>
-          <Name name={name} updateName={updateName} />
-          <IconButton size={'small'} onClick={remove}>
-            <Delete />
-          </IconButton>
-        </TodoListTitleRow>
-        <Description
-          description={description}
-          updateDescription={updateDescription}
-        />
-        <CreationDate creationDate={creationDate} />
-      </TodoListCard>
-    </CSSTransition>
+    <TodoListCard animationClass={animationClass} timeout={timeout}>
+      <TodoListTitleRow>
+        <Name name={name} updateName={updateName} />
+        <IconButton size={'small'} onClick={remove}>
+          <Delete />
+        </IconButton>
+      </TodoListTitleRow>
+      <Description
+        description={description}
+        updateDescription={updateDescription}
+      />
+      <CreationDate creationDate={creationDate} />
+    </TodoListCard>
   );
 }
 
@@ -82,6 +73,21 @@ TodoListItem.propTypes = {
   onUpdate: PropTypes.func.isRequired
 };
 
+function TodoListItemWithAnimation(props) {
+  return (
+    <CSSTransition
+      appear={true}
+      in={true}
+      exit={false}
+      classNames={animationClass}
+      timeout={timeout}
+      unmountOnExit
+    >
+      <TodoListItem {...props} />
+    </CSSTransition>
+  );
+}
+
 const mapDispatchToProps = dispatch => {
   return {
     onRemove: id => dispatch(removeTodo(id)),
@@ -92,4 +98,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(TodoListItem);
+)(TodoListItemWithAnimation);

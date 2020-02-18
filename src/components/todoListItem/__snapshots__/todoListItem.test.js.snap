@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoListItem renders a todoListItem matching the snapshot 1`] = `
+<div
+  className="sc-AxjAm sc-AxirZ sc-AxmLO iNeIzD"
+>
+  <div
+    className="sc-fzozJi VsnIy"
+  >
+    <div
+      className="sc-Axmtr hpBlCE inline-editable"
+    >
+      <div
+        className="inline-editable__edit-trigger"
+        onClick={[Function]}
+      >
+        <span
+          className="inline-editable__value"
+        >
+          Test name
+        </span>
+      </div>
+    </div>
+    <button
+      className="sc-AxgMl goaPPV"
+      onClick={[Function]}
+      size="small"
+    >
+      <svg
+        height="18px"
+        version="1.1"
+        viewBox="0 0 14 18"
+        width="14px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Delete
+        </title>
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <g
+            transform="translate(-207.000000, -245.000000)"
+          >
+            <g
+              transform="translate(100.000000, 100.000000)"
+            >
+              <g
+                id="Outlined-/-Action-/-delete"
+                transform="translate(102.000000, 142.000000)"
+              >
+                <g>
+                  <polygon
+                    id="Path"
+                    points="0 0 24 0 24 24 0 24"
+                  />
+                  <path
+                    d="M16,9 L16,19 L8,19 L8,9 L16,9 Z M14.5,3 L9.5,3 L8.5,4 L5,4 L5,6 L19,6 L19,4 L15.5,4 L14.5,3 Z M18,7 L6,7 L6,19 C6,20.1 6.9,21 8,21 L16,21 C17.1,21 18,20.1 18,19 L18,7 Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+  <div
+    className="sc-AxhUy iMQyOW inline-editable"
+  >
+    <div
+      className="inline-editable__edit-trigger"
+      onClick={[Function]}
+    >
+      <span
+        className="inline-editable__value"
+      >
+        test description
+      </span>
+    </div>
+  </div>
+  <a
+    className="sc-AxiKw duQvSb"
+  >
+    February 18, 2020, 4:38 PM
+  </a>
+</div>
+`;
