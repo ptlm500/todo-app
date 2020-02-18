@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import InlineEditable from '../inline-editable';
-import AutosizingTextarea from '../autosizingTextarea';
+import InlineEditable from '../../inline-editable';
+import AutosizingTextarea from '../../autosizingTextarea';
 
 function Description(props) {
   const {
@@ -40,4 +40,5 @@ Description.propTypes = {
 
 export default styled(Description)`
   margin-bottom: 1rem;
+  min-width: 100px;
 `;

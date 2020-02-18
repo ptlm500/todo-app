@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
-import Card from '../card';
-import CreationDate from './CreationDate';
+import { AnimatedCard } from '../card';
+import CreationDate from './creationDate';
 import Description from './Description';
 import IconButton from '../iconButton';
-import Name from './Name';
+import Name from './name';
 import { Delete } from '../../icons';
+import { CSSTransition } from 'react-transition-group';
+
+const timeout = 200;
+const animationClass = 'card-transition';
 
 function TodoListItem(props) {
   const {
@@ -34,23 +38,32 @@ function TodoListItem(props) {
   }
 
   return (
-    <TodoListCard>
-      <TodoListTitleRow>
-        <Name name={name} updateName={updateName} />
-        <IconButton size={'small'} onClick={remove}>
-          <Delete />
-        </IconButton>
-      </TodoListTitleRow>
-      <Description
-        description={description}
-        updateDescription={updateDescription}
-      />
-      <CreationDate creationDate={creationDate} />
-    </TodoListCard>
+    <CSSTransition
+      appear={true}
+      in={true}
+      exit={false}
+      classNames={animationClass}
+      timeout={timeout}
+      unmountOnExit
+    >
+      <TodoListCard animationClass={animationClass} timeout={timeout}>
+        <TodoListTitleRow>
+          <Name name={name} updateName={updateName} />
+          <IconButton size={'small'} onClick={remove}>
+            <Delete />
+          </IconButton>
+        </TodoListTitleRow>
+        <Description
+          description={description}
+          updateDescription={updateDescription}
+        />
+        <CreationDate creationDate={creationDate} />
+      </TodoListCard>
+    </CSSTransition>
   );
 }
 
-const TodoListCard = styled(Card)`
+const TodoListCard = styled(AnimatedCard)`
   min-width: 300px;
 `;
 

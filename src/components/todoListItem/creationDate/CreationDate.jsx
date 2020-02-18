@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedDate } from 'react-intl';
 import styled from 'styled-components';
-import { theme } from '../../styles';
+import { theme } from '../../../styles';
 
 function CreationDate(props) {
   const {

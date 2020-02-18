@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import InlineEditable from '../inline-editable';
-import Input from '../input';
+import InlineEditable from '../../inline-editable';
+import Input from '../../input';
 
 function Name(props) {
   const {
@@ -40,4 +40,5 @@ Name.propTypes = {
 export default styled(Name)`
   font-size: 24px;
   font-weight: 600;
+  min-width: 100px;
 `;
