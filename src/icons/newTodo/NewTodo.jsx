@@ -1,16 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useIntl, defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+  title: {
+    id: 'todo.icons.newTodo.title',
+    defaultMessage: 'New todo',
+    description: 'New todo icon title'
+  }
+});
 
 // Base icon from https://freeicons.io/
 export default function NewTodo(props) {
   const { title = 'New todo' } = props;
+  const intl = useIntl();
 
   return (
     <svg
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>{title}</title>
+      <title>{title || intl.formatMessage(messages.title)}</title>
       <linearGradient id="a" gradientTransform="matrix(1 0 0 -1 0 -12310)" gradientUnits="userSpaceOnUse" x1="0" x2="512" y1="-12566" y2="-12566">
         <stop offset="0" stopColor="#303F9F"/>
         <stop offset="1" stopColor="#D32F2F"/>

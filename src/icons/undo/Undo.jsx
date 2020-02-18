@@ -1,13 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useIntl, defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+  title: {
+    id: 'todo.icons.undo.title',
+    defaultMessage: 'Undo',
+    description: 'Undo icon title'
+  }
+});
 
 // Icon from https://freeicons.io/
 export default function Undo(props) {
-  const { title = 'Undo' } = props;
+  const { title } = props;
+  const intl = useIntl();
 
   return (
     <svg width="21px" height="9px" viewBox="0 0 21 9" version="1.1" xmlns="http://www.w3.org/2000/svg">
-      <title>{title}</title>
+      <title>{title || intl.formatMessage(messages.title)}</title>
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g transform="translate(-238.000000, -1533.000000)">
           <g transform="translate(100.000000, 1428.000000)">
