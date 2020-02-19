@@ -4,7 +4,7 @@ import { renderWithIntl } from '../../../test/utils';
 import { TodoListItem } from './TodoListItem';
 import IconButton from '../iconButton';
 import Name from './name';
-import Description from './Description';
+import Description from './description';
 
 const defaultProps = {
   id: 'test-id',

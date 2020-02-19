@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
 import { AnimatedCard } from '../card';
 import CreationDate from './creationDate';
-import Description from './Description';
+import Description from './description';
 import IconButton from '../iconButton';
 import Name from './name';
 import { Delete } from '../../icons';
