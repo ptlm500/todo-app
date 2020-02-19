@@ -14,6 +14,7 @@ import {
 } from '../button';
 import IconButton from '../iconButton';
 import { NewTodo } from '../../icons';
+import { theme, breakpoints } from '../../styles';
 
 const messages = defineMessages({
   namePlaceholder: {
@@ -83,7 +84,7 @@ export function AddTodoListItem(props) {
         timeout={timeout}
         unmountOnExit
       >
-        <AnimatedCard animationClass={animationClass} timeout={timeout}>
+        <AddItemForm animationClass={animationClass} timeout={timeout}>
           <NameInput
             id="name-input"
             placeholder={intl.formatMessage(messages.namePlaceholder)}
@@ -118,20 +119,31 @@ export function AddTodoListItem(props) {
               />
             </PrimaryButton>
           </Actions>
-        </AnimatedCard>
+        </AddItemForm>
       </CSSTransition>
     </>
   );
 }
 
+const AddItemForm = styled(AnimatedCard)`
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  max-width: fit-content;
+  ${breakpoints.phoneOnly('max-width: 90%')}
+`;
+
 export const NameInput = styled.input`
-  font-size: 24px;
+  ${theme.headerFontSize};
   font-weight: 600;
   margin-bottom: 1rem;
+  max-width: 100%;
 `;
 
 export const DescriptionInput = styled(AutosizingTextarea)`
+  ${theme.bodyFontSize};
   margin-bottom: 1rem;
+  max-width: 100%;
 `;
 
 const Actions = styled.div`

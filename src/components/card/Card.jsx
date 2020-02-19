@@ -6,7 +6,6 @@ export const Card = styled.div`
   background: ${theme.primaryLight};
   border-radius: ${theme.defaultRadius};
   padding: 1rem;
-  width: fit-content;
 
   &.card-transition-enter {
     opacity: 0.01;

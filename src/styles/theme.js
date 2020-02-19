@@ -1,3 +1,5 @@
+import flexUnit from './flexUnit';
+
 export default {
   background: '#FFFFFF',
   primaryDark: '#303F9F',
@@ -19,5 +21,7 @@ export default {
   font: '\'Segoe UI\' \'HelveticaNeue-Light\' sans-serif',
   defaultRadius: '0.5rem',
   shortTransition: '0.1s',
-  longTransition: '0.3s'
+  longTransition: '0.3s',
+  headerFontSize: flexUnit(5, 12, 32),
+  bodyFontSize: flexUnit(2.5, 12, 16)
 };

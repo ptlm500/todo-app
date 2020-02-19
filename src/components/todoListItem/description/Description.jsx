@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import InlineEditable from '../../inline-editable';
 import AutosizingTextarea from '../../autosizingTextarea';
+import { theme } from '../../../styles';
 
 function Description(props) {
   const {
@@ -39,6 +40,7 @@ Description.propTypes = {
 };
 
 export default styled(Description)`
+  ${theme.bodyFontSize};
   margin-bottom: 1rem;
   min-width: 100px;
 `;

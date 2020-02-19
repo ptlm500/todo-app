@@ -11,4 +11,5 @@ export default styled(TextareaAutosize)`
   border: 1px solid ${theme.divider};
   padding: 0px;
   width: 100%;
+  max-width: 100%;
 `;
