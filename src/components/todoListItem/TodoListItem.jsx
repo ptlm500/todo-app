@@ -3,14 +3,18 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { removeTodo, updateTodo } from '../../state/actions/actions';
-import Card from '../card';
-import CreationDate from './CreationDate';
-import Description from './Description';
+import { AnimatedCard } from '../card';
+import CreationDate from './creationDate';
+import Description from './description';
 import IconButton from '../iconButton';
-import Name from './Name';
+import Name from './name';
 import { Delete } from '../../icons';
+import { CSSTransition } from 'react-transition-group';
 
-function TodoListItem(props) {
+const timeout = 200;
+const animationClass = 'card-transition';
+
+export function TodoListItem(props) {
   const {
     id,
     name,
@@ -34,7 +38,7 @@ function TodoListItem(props) {
   }
 
   return (
-    <TodoListCard>
+    <TodoListCard animationClass={animationClass} timeout={timeout}>
       <TodoListTitleRow>
         <Name name={name} updateName={updateName} />
         <IconButton size={'small'} onClick={remove}>
@@ -50,7 +54,7 @@ function TodoListItem(props) {
   );
 }
 
-const TodoListCard = styled(Card)`
+const TodoListCard = styled(AnimatedCard)`
   min-width: 300px;
 `;
 
@@ -69,6 +73,21 @@ TodoListItem.propTypes = {
   onUpdate: PropTypes.func.isRequired
 };
 
+function TodoListItemWithAnimation(props) {
+  return (
+    <CSSTransition
+      appear={true}
+      in={true}
+      exit={false}
+      classNames={animationClass}
+      timeout={timeout}
+      unmountOnExit
+    >
+      <TodoListItem {...props} />
+    </CSSTransition>
+  );
+}
+
 const mapDispatchToProps = dispatch => {
   return {
     onRemove: id => dispatch(removeTodo(id)),
@@ -79,4 +98,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(TodoListItem);
+)(TodoListItemWithAnimation);

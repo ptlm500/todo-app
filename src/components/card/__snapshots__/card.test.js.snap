@@ -1,5 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`AnimatedCard renders an AnimatedCard 1`] = `
+.c0 {
+  background: #C5CAE9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c0.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.test-class-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.test-class-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 100ms ease-out;
+  transition: 100ms ease-out;
+}
+
+.c0.test-class-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.test-class-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 100ms ease-out;
+  transition: 100ms ease-out;
+}
+
+<div
+  className="sc-AxjAm c0"
+/>
+`;
+
 exports[`Card renders a Card 1`] = `
 .c0 {
   background: #C5CAE9;
@@ -8,6 +87,38 @@ exports[`Card renders a Card 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.c0.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
 }
 
 <div

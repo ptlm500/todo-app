@@ -29,7 +29,7 @@ function RecordingControls(props) {
   return (
     <div className={className}>
       <Indicator pulsing fill={theme.red} disabled={!recordingEnabled} />
-      <SecondaryButton onClick={onToggleRecording}>
+      <SecondaryButton id="toggle-recording" onClick={onToggleRecording}>
         {
           recordingEnabled ?
             <FormattedMessage
@@ -44,17 +44,26 @@ function RecordingControls(props) {
             />
         }
       </SecondaryButton>
-      <SecondaryButton danger onClick={onClearRecording} disabled={disableClear}>
+      <SecondaryButton
+        id="clear"
+        danger
+        onClick={onClearRecording}
+        disabled={disableClear}
+      >
         <FormattedMessage
           id="todo.recControl.clear"
           description="Clear recording button text"
           defaultMessage="Clear"
         />
       </SecondaryButton>
-      <SecondaryButton onClick={onBack}>
+      <SecondaryButton id="undo" onClick={onBack}>
         <Undo />
       </SecondaryButton>
-      <SecondaryButton onClick={onForward} disabled={disableForward}>
+      <SecondaryButton
+        id="redo"
+        onClick={onForward}
+        disabled={disableForward}
+      >
         <Redo />
       </SecondaryButton>
     </div>

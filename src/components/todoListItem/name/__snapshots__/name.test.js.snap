@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Name renders a Name 1`] = `
+<div
+  className="sc-AxirZ gyXZKu test-class inline-editable"
+>
+  <div
+    className="inline-editable__edit-trigger"
+    onClick={[Function]}
+  >
+    <span
+      className="inline-editable__value"
+    >
+      Test name
+    </span>
+  </div>
+</div>
+`;

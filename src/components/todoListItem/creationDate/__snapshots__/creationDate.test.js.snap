@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreationDate renders the creation date using FormattedMessage 1`] = `
+<a
+  className="sc-AxjAm ELMTo test-class"
+>
+  February 18, 2020, 12:41 PM
+</a>
+`;
