@@ -49,7 +49,7 @@ describe('Name', () => {
 
     expect(inlineEditable.props.value).toBe(editedName);
 
-     // Test props override internal state updates
+    // Test props override internal state updates
     const newProps = {
       ...defaultProps,
       name: 'New name'
