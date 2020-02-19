@@ -4,6 +4,17 @@ exports[`theme matches the snapshot 1`] = `
 Object {
   "accent": "#448AFF",
   "background": "#FFFFFF",
+  "bodyFontSize": "
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+    
+      @media (min-width: 640px) {
+        font-size: 16px;
+      }
+    
+    font-size: 2.5vw
+  ",
   "danger": "#D32F2F",
   "dangerLight": "#F44336",
   "defaultRadius": "0.5rem",
@@ -11,6 +22,17 @@ Object {
   "divider": "#BDBDBD",
   "font": "'Segoe UI' 'HelveticaNeue-Light' sans-serif",
   "green": "#388E3C",
+  "headerFontSize": "
+    @media (max-width: 240px) {
+      font-size: 12px;
+    }
+    
+      @media (min-width: 640px) {
+        font-size: 32px;
+      }
+    
+    font-size: 5vw
+  ",
   "icon": "#212121",
   "invertedIcon": "#FFFFFF",
   "invertedText": "#FFFFFF",

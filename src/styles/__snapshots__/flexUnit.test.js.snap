@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flexUnit allows a custom prop to be specified 1`] = `
+"
+    @media (max-width: 2000px) {
+      width: 100px;
+    }
+    
+      @media (min-width: 4000px) {
+        width: 200px;
+      }
+    
+    width: 5vw
+  "
+`;
+
+exports[`flexUnit defaults to use width and provide a font-size style 1`] = `
+"
+    @media (max-width: 2000px) {
+      font-size: 100px;
+    }
+    
+      @media (min-width: 4000px) {
+        font-size: 200px;
+      }
+    
+    font-size: 5vw
+  "
+`;
+
+exports[`flexUnit uses height when vh is provided 1`] = `
+"
+    @media (max-height: 2000px) {
+      font-size: 100px;
+    }
+    
+      @media (min-height: 4000px) {
+        font-size: 200px;
+      }
+    
+    font-size: 5vh
+  "
+`;
+
+exports[`flexUnit uses width when vw is provided 1`] = `
+"
+    @media (max-width: 2000px) {
+      font-size: 100px;
+    }
+    
+      @media (min-width: 4000px) {
+        font-size: 200px;
+      }
+    
+    font-size: 5vw
+  "
+`;
+
+exports[`flexUnit warns when an invalid unit is provided and defaults to width 1`] = `
+"
+    @media (max-width: 2000px) {
+      font-size: 100px;
+    }
+    
+      @media (min-width: 4000px) {
+        font-size: 200px;
+      }
+    
+    font-size: 5vw
+  "
+`;
