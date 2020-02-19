@@ -6,13 +6,13 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
 >
   <div>
     <div
-      className="sc-AxjAm sc-AxirZ sc-AxmLO iNeIzD"
+      className="sc-AxjAm sc-AxirZ sc-AxmLO hShNUz"
     >
       <div
         className="sc-fzozJi VsnIy"
       >
         <div
-          className="sc-Axmtr hpBlCE inline-editable"
+          className="sc-Axmtr gNLRxd inline-editable"
         >
           <div
             className="inline-editable__edit-trigger"
@@ -74,7 +74,7 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
         </button>
       </div>
       <div
-        className="sc-AxhUy iMQyOW inline-editable"
+        className="sc-AxhUy ksTcoh inline-editable"
       >
         <div
           className="inline-editable__edit-trigger"
@@ -88,7 +88,7 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
         </div>
       </div>
       <a
-        className="sc-AxiKw duQvSb"
+        className="sc-AxiKw loCESA"
       >
         February 12, 2020, 11:19 PM
       </a>
@@ -96,13 +96,13 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
   </div>
   <div>
     <div
-      className="sc-AxjAm sc-AxirZ sc-AxmLO iNeIzD"
+      className="sc-AxjAm sc-AxirZ sc-AxmLO hShNUz"
     >
       <div
         className="sc-fzozJi VsnIy"
       >
         <div
-          className="sc-Axmtr hpBlCE inline-editable"
+          className="sc-Axmtr gNLRxd inline-editable"
         >
           <div
             className="inline-editable__edit-trigger"
@@ -164,7 +164,7 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
         </button>
       </div>
       <div
-        className="sc-AxhUy iMQyOW inline-editable"
+        className="sc-AxhUy ksTcoh inline-editable"
       >
         <div
           className="inline-editable__edit-trigger"
@@ -178,7 +178,7 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
         </div>
       </div>
       <a
-        className="sc-AxiKw duQvSb"
+        className="sc-AxiKw loCESA"
       >
         February 12, 2020, 11:19 PM
       </a>

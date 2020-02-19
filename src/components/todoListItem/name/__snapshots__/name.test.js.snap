@@ -2,7 +2,7 @@
 
 exports[`Name renders a Name 1`] = `
 <div
-  className="sc-AxirZ gyXZKu test-class inline-editable"
+  className="sc-AxirZ iirBHr test-class inline-editable"
 >
   <div
     className="inline-editable__edit-trigger"

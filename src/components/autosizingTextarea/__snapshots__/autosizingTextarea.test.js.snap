@@ -12,6 +12,7 @@ exports[`AutosizingTextarea renders an AutosizingTextarea 1`] = `
   border: 1px solid #BDBDBD;
   padding: 0px;
   width: 100%;
+  max-width: 100%;
 }
 
 <textarea
