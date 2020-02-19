@@ -40,7 +40,7 @@ Description.propTypes = {
 };
 
 export default styled(Description)`
-  ${theme.bodyFontSize};
+  ${theme.font.bodySize};
   margin-bottom: 1rem;
   min-width: 100px;
 `;

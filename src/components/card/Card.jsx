@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../styles';
 
 export const Card = styled.div`
-  background: ${theme.primaryLight};
+  background: ${theme.colour.primaryLight};
   border-radius: ${theme.defaultRadius};
   padding: 1rem;
 

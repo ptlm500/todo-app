@@ -134,14 +134,14 @@ const AddItemForm = styled(AnimatedCard)`
 `;
 
 export const NameInput = styled.input`
-  ${theme.headerFontSize};
+  ${theme.font.headerSize};
   font-weight: 600;
   margin-bottom: 1rem;
   max-width: 100%;
 `;
 
 export const DescriptionInput = styled(AutosizingTextarea)`
-  ${theme.bodyFontSize};
+  ${theme.font.bodySize};
   margin-bottom: 1rem;
   max-width: 100%;
 `;

@@ -22,7 +22,7 @@ const IconButton = styled.button`
   height: ${props => getSize(props.size)};
   padding: 0;
   cursor: pointer;
-  transition: ${theme.longTransition};
+  transition: ${theme.transition.long};
 
   > svg {
     width: 100%;

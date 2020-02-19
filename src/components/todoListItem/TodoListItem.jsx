@@ -56,7 +56,7 @@ export function TodoListItem(props) {
 }
 
 const TodoListCard = styled(AnimatedCard)`
-  border: 1px solid ${theme.primary};
+  border: 1px solid ${theme.colour.primary};
   min-width: 450px;
   max-width: fit-content;
   ${breakpoints.phoneOnly(`

@@ -2,9 +2,28 @@
 
 exports[`theme matches the snapshot 1`] = `
 Object {
-  "accent": "#448AFF",
-  "background": "#FFFFFF",
-  "bodyFontSize": "
+  "colour": Object {
+    "accent": "#448AFF",
+    "background": "#FFFFFF",
+    "danger": "#D32F2F",
+    "dangerLight": "#F44336",
+    "disabled": "#BDBDBD",
+    "divider": "#BDBDBD",
+    "green": "#388E3C",
+    "icon": "#212121",
+    "invertedIcon": "#FFFFFF",
+    "invertedText": "#FFFFFF",
+    "primary": "#3F51B5",
+    "primaryDark": "#303F9F",
+    "primaryLight": "#C5CAE9",
+    "red": "#D32F2F",
+    "secondaryIcon": "#757575",
+    "secondaryText": "#757575",
+    "text": "#212121",
+  },
+  "defaultRadius": "0.5rem",
+  "font": Object {
+    "bodySize": "
     @media (max-width: 480px) {
       font-size: 12px;
     }
@@ -15,14 +34,8 @@ Object {
     
     font-size: 2.5vw
   ",
-  "danger": "#D32F2F",
-  "dangerLight": "#F44336",
-  "defaultRadius": "0.5rem",
-  "disabled": "#BDBDBD",
-  "divider": "#BDBDBD",
-  "font": "'Segoe UI' 'HelveticaNeue-Light' sans-serif",
-  "green": "#388E3C",
-  "headerFontSize": "
+    "family": "'Segoe UI', 'HelveticaNeue-Light', sans-serif",
+    "headerSize": "
     @media (max-width: 240px) {
       font-size: 12px;
     }
@@ -33,17 +46,10 @@ Object {
     
     font-size: 5vw
   ",
-  "icon": "#212121",
-  "invertedIcon": "#FFFFFF",
-  "invertedText": "#FFFFFF",
-  "longTransition": "0.3s",
-  "primary": "#3F51B5",
-  "primaryDark": "#303F9F",
-  "primaryLight": "#C5CAE9",
-  "red": "#D32F2F",
-  "secondaryIcon": "#757575",
-  "secondaryText": "#757575",
-  "shortTransition": "0.1s",
-  "text": "#212121",
+  },
+  "transition": Object {
+    "long": "0.3s",
+    "short": "0.1s",
+  },
 }
 `;

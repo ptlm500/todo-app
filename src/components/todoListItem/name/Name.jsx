@@ -40,7 +40,7 @@ Name.propTypes = {
 };
 
 export default styled(Name)`
-  ${theme.headerFontSize};
+  ${theme.font.headerSize};
   font-weight: 600;
   min-width: 100px;
 `;
