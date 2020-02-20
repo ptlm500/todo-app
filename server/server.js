@@ -1,20 +1,12 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const acceptLanguage = require('accept-language');
+const detectLocale = require('./utils/detectLocale');
 const port = process.env.PORT || 8080;
-
-acceptLanguage.languages(['en', 'de']);
 
 const app = express();
 
 app.use(cookieParser());
-
-function detectLocale(req) {
-  const cookieLocale = req.cookies.locale;
-
-  return acceptLanguage.get(cookieLocale || req.headers['accept-language']) || 'en';
-}
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
@@ -31,3 +23,5 @@ app.get('*', (req, res) =>{
   res.status(200)
     .sendFile(path.join(__dirname, '/client/build/index.html'));
 });
+
+module.exports = app;
