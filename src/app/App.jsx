@@ -10,6 +10,7 @@ import RecordingControls from '../components/recordingControls';
 import en from '../../nls/en.json';
 import de from '../../nls/de.json';
 import Loading from '../components/loading/Loading';
+import ErrorBoundary from '../components/errorBoundary/ErrorBoundary';
 const messages = {
   'en': en,
   'de': de
@@ -45,29 +46,31 @@ export default function App() {
   const locale = useLocale();
 
   return (
-    <Provider store={store}>
-      {
-        locale ? (
-          <IntlProvider
-            locale={locale}
-            key={locale}
-            messages={messages[locale]}
-          >
-            <AppWrapper>
-              <TodoListWrapper>
-                <TodoList />
-                <AddTodoListItem />
-              </TodoListWrapper>
-              <RecordingControls />
-            </AppWrapper>
-          </IntlProvider>
-        ) : (
-          <LoadingWrapper>
-            <Loading />
-          </LoadingWrapper>
-        )
-      }
-    </Provider>
+    <ErrorBoundary>
+      <Provider store={store}>
+        {
+          locale ? (
+            <IntlProvider
+              locale={locale}
+              key={locale}
+              messages={messages[locale]}
+            >
+              <AppWrapper>
+                <TodoListWrapper>
+                  <TodoList />
+                  <AddTodoListItem />
+                </TodoListWrapper>
+                <RecordingControls />
+              </AppWrapper>
+            </IntlProvider>
+          ) : (
+            <LoadingWrapper>
+              <Loading />
+            </LoadingWrapper>
+          )
+        }
+      </Provider>
+    </ErrorBoundary>
   );
 }
 
