@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading matches the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+.c0 > div {
+  background: #3F51B5;
+  width: 20%;
+  height: 20%;
+  border-radius: 0.5rem;
+  -webkit-animation: jltStV 2s ease-in-out infinite;
+  animation: jltStV 2s ease-in-out infinite;
+  opacity: 0.1;
+}
+
+.c0 > div:nth-child(1) {
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
+}
+
+.c0 > div:nth-child(2) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.c0 > div:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.c0 > div:nth-child(4) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+<div
+  className="c0"
+>
+  <div />
+  <div />
+  <div />
+  <div />
+</div>
+`;
+
+exports[`Loading matches the snapshot when a custom size is provided 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+}
+
+.c0 > div {
+  background: #3F51B5;
+  width: 20%;
+  height: 20%;
+  border-radius: 0.5rem;
+  -webkit-animation: jltStV 2s ease-in-out infinite;
+  animation: jltStV 2s ease-in-out infinite;
+  opacity: 0.1;
+}
+
+.c0 > div:nth-child(1) {
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
+}
+
+.c0 > div:nth-child(2) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.c0 > div:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.c0 > div:nth-child(4) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+<div
+  className="c0"
+  size={10}
+>
+  <div />
+  <div />
+  <div />
+  <div />
+</div>
+`;
+
+exports[`load matches the snapshot 1`] = `
+Keyframes {
+  "id": "sc-keyframes-jltStV",
+  "inject": [Function],
+  "name": "jltStV",
+  "stringifyArgs": Array [
+    "
+    0% {
+      opacity: 0.5;
+      height: 20%;
+    }
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+    100% {
+      opacity: 0.5;
+      height: 20%;
+    }
+",
+    "jltStV",
+    "@keyframes",
+  ],
+  "toString": [Function],
+}
+`;
