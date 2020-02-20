@@ -18,6 +18,18 @@ export const initialState = fromJS({
   }
 });
 
+/**
+ * An action
+ * @typedef {Object} Action
+ * @property {string} type the action type
+ */
+
+/**
+ * Todos reducer
+ * @param {Object} [state] Immutable Map representing current state
+ * @param {Action} action The action to process
+ * @return {Object} Immutable Map containing the current state
+ */
 export function todos(state = initialState, action) {
   if (!action) {
     console.warn('[todos]: No action passed');
