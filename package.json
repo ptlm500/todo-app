@@ -9,7 +9,7 @@
     "webpack": "webpack-dev-server --open --config webpack.dev.js",
     "build": "cross-env BABEL_ENV=production webpack --config webpack.prod.js",
     "lint": "./node_modules/.bin/eslint ./src/",
-    "test": "jest",
+    "test": "jest --forceExit",
     "test:ci": "jest --ci --forceExit"
   },
   "repository": {

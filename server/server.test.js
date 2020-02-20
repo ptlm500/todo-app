@@ -1,4 +1,4 @@
-const app = require('../serverr');
+const app = require('../server');
 const request = require('supertest');
 const config = require('./config.json');
 
@@ -36,13 +36,3 @@ describe('GET /api/locale', () => {
     expect(res.body).toEqual({locale: config.DEFAULT_LOCALE});
   });
 });
-
-describe('GET /undefined', () => {
-  it('should return 404 for an unknown route', async () => {
-    const res = await request(app)
-      .get('/undefined');
-
-    expect(res.status).toEqual(404);
-  });
-});
-
