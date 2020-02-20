@@ -1,6 +1,12 @@
 import { List, fromJS, is } from 'immutable';
 import { BACK, FORWARD, CLEAR_RECORDING, TOGGLE_RECORDING } from './recordableActions';
 
+/**
+ * Wraps a reducer with a recording of past and future state
+ * @param {function} reducer The reducer to wrap
+ * @returns {Object} Immutable Map containing past, present and future states
+ *    with recordingEnabled to track current recording state
+ */
 export default function recordable(reducer) {
   const initialState = fromJS({
     past: [],
