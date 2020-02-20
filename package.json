@@ -10,7 +10,7 @@
     "build": "cross-env BABEL_ENV=production webpack --config webpack.prod.js",
     "lint": "./node_modules/.bin/eslint ./src/",
     "test": "jest",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci --forceExit"
   },
   "repository": {
     "type": "git",
