@@ -1,4 +1,4 @@
-const app = require('./server');
+const app = require('../serverr');
 const request = require('supertest');
 const config = require('./config.json');
 
