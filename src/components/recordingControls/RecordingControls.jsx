@@ -28,7 +28,7 @@ function RecordingControls(props) {
 
   return (
     <div className={className}>
-      <Indicator pulsing fill={theme.red} disabled={!recordingEnabled} />
+      <Indicator pulsing fill={theme.colour.red} disabled={!recordingEnabled} />
       <SecondaryButton id="toggle-recording" onClick={onToggleRecording}>
         {
           recordingEnabled ?
@@ -76,7 +76,7 @@ export const StyledRecordingControls = styled(RecordingControls)`
   align-items: center;
   left: 0;
   bottom: 0;
-  background-color: ${theme.primaryDark};
+  background-color: ${theme.colour.primaryDark};
   position: fixed;
   width: 100%;
   padding: 0.5rem 5%;

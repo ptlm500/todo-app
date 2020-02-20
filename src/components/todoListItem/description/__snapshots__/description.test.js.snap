@@ -2,7 +2,7 @@
 
 exports[`Description renders a Description 1`] = `
 <div
-  className="sc-AxirZ dLYvlP test-class inline-editable"
+  className="sc-AxirZ ixalE test-class inline-editable"
 >
   <div
     className="inline-editable__edit-trigger"

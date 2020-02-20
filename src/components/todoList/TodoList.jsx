@@ -23,7 +23,7 @@ function TodoList(props) {
 }
 
 export const StyledTodoList = styled(TodoList)`
-  border-left: 1px solid ${theme.divider};
+  border-left: 1px solid ${theme.colour.divider};
 
   padding-left: 0.5rem;
 

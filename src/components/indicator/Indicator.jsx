@@ -24,10 +24,10 @@ const StyledIndicator = styled.svg`
 const StyledInnerCircle = styled.circle`
   animation: ${props => props.disabled || !props.pulsing ? 'none' :
     css`${circlePulse()} infinite 4s ease-in-out;`};
-  fill: ${props => props.disabled ? theme.disabled : props.fill};
+  fill: ${props => props.disabled ? theme.colour.disabled : props.fill};
   width: 100;
   height: 100;
-  transition: ${theme.shortTransition};
+  transition: ${theme.transition.short};
 `;
 
 

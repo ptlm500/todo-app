@@ -30,5 +30,6 @@ CreationDate.propTypes = {
 };
 
 export default styled(CreationDate)`
-  color: ${theme.secondaryText}
+  ${theme.font.bodySize};
+  color: ${theme.colour.secondaryText}
 `;

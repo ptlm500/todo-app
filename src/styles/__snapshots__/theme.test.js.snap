@@ -2,26 +2,54 @@
 
 exports[`theme matches the snapshot 1`] = `
 Object {
-  "accent": "#448AFF",
-  "background": "#FFFFFF",
-  "danger": "#D32F2F",
-  "dangerLight": "#F44336",
+  "colour": Object {
+    "accent": "#448AFF",
+    "background": "#FFFFFF",
+    "danger": "#D32F2F",
+    "dangerLight": "#F44336",
+    "disabled": "#BDBDBD",
+    "divider": "#BDBDBD",
+    "green": "#388E3C",
+    "icon": "#212121",
+    "invertedIcon": "#FFFFFF",
+    "invertedText": "#FFFFFF",
+    "primary": "#3F51B5",
+    "primaryDark": "#303F9F",
+    "primaryLight": "#C5CAE9",
+    "red": "#D32F2F",
+    "secondaryIcon": "#757575",
+    "secondaryText": "#757575",
+    "text": "#212121",
+  },
   "defaultRadius": "0.5rem",
-  "disabled": "#BDBDBD",
-  "divider": "#BDBDBD",
-  "font": "'Segoe UI' 'HelveticaNeue-Light' sans-serif",
-  "green": "#388E3C",
-  "icon": "#212121",
-  "invertedIcon": "#FFFFFF",
-  "invertedText": "#FFFFFF",
-  "longTransition": "0.3s",
-  "primary": "#3F51B5",
-  "primaryDark": "#303F9F",
-  "primaryLight": "#C5CAE9",
-  "red": "#D32F2F",
-  "secondaryIcon": "#757575",
-  "secondaryText": "#757575",
-  "shortTransition": "0.1s",
-  "text": "#212121",
+  "font": Object {
+    "bodySize": "
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+    
+      @media (min-width: 640px) {
+        font-size: 16px;
+      }
+    
+    font-size: 2.5vw
+  ",
+    "family": "'Segoe UI', 'HelveticaNeue-Light', sans-serif",
+    "headerSize": "
+    @media (max-width: 240px) {
+      font-size: 12px;
+    }
+    
+      @media (min-width: 640px) {
+        font-size: 32px;
+      }
+    
+    font-size: 5vw
+  ",
+  },
+  "transition": Object {
+    "long": "0.3s",
+    "short": "0.1s",
+  },
 }
 `;

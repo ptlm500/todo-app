@@ -1,4 +1,6 @@
-export default {
+import flexUnit from './flexUnit';
+
+const colour = {
   background: '#FFFFFF',
   primaryDark: '#303F9F',
   primaryLight: '#C5CAE9',
@@ -16,8 +18,22 @@ export default {
   dangerLight: '#F44336',
   green: '#388E3C',
   red: '#D32F2F',
-  font: '\'Segoe UI\' \'HelveticaNeue-Light\' sans-serif',
+};
+
+const font = {
+  family: '\'Segoe UI\', \'HelveticaNeue-Light\', sans-serif',
+  headerSize: flexUnit(5, 12, 32),
+  bodySize: flexUnit(2.5, 12, 16)
+};
+
+const transition = {
+  short: '0.1s',
+  long: '0.3s',
+};
+
+export default {
+  colour,
+  font,
+  transition,
   defaultRadius: '0.5rem',
-  shortTransition: '0.1s',
-  longTransition: '0.3s'
 };

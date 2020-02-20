@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`breakpoints exports a bigDesktopUp media query 1`] = `
+"
+  @media (min-width: 1800px) {
+    width: 100px
+  }
+  "
+`;
+
+exports[`breakpoints exports a desktopUp media query 1`] = `
+"
+  @media (min-width: 1200px) {
+    width: 100px
+  }
+  "
+`;
+
+exports[`breakpoints exports a phoneOnly media query 1`] = `
+"
+  @media (max-width: 599px) {
+    width: 100px
+  }
+  "
+`;
+
+exports[`breakpoints exports a tabletLandscapeUp media query 1`] = `
+"
+  @media (min-width: 900px) {
+    width: 100px
+  }
+  "
+`;
+
+exports[`breakpoints exports a tabletPortaitUp media query 1`] = `
+"
+  @media (min-width: 600px) {
+    width: 100px
+  }
+  "
+`;

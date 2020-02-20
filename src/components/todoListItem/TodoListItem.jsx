@@ -10,6 +10,7 @@ import IconButton from '../iconButton';
 import Name from './name';
 import { Delete } from '../../icons';
 import { CSSTransition } from 'react-transition-group';
+import { theme, breakpoints } from '../../styles';
 
 const timeout = 200;
 const animationClass = 'card-transition';
@@ -55,7 +56,13 @@ export function TodoListItem(props) {
 }
 
 const TodoListCard = styled(AnimatedCard)`
-  min-width: 300px;
+  border: 1px solid ${theme.colour.primary};
+  min-width: 450px;
+  max-width: fit-content;
+  ${breakpoints.phoneOnly(`
+    min-width: 300px;
+    max-width: 90%
+  `)}
 `;
 
 const TodoListTitleRow = styled.div`

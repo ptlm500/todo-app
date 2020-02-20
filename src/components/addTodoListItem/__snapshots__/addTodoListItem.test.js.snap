@@ -68,10 +68,10 @@ Array [
     unmountOnExit={true}
   >
     <div
-      className="sc-AxirZ sc-AxiKw dpssYP"
+      className="sc-AxirZ sc-AxiKw sc-AxheI gcnXRt"
     >
       <input
-        className="sc-AxheI gBOIfA"
+        className="sc-Axmtr hsWzle"
         id="name-input"
         onChange={[Function]}
         placeholder="Enter a name"
@@ -79,7 +79,7 @@ Array [
       />
       <textarea
         async={false}
-        className="sc-AxjAm sc-Axmtr fcpivW"
+        className="sc-AxjAm sc-AxmLO hHHzKC"
         id="description-input"
         onChange={[Function]}
         placeholder="Enter a description"
@@ -87,7 +87,7 @@ Array [
         value=""
       />
       <div
-        className="sc-AxmLO gCDIyc"
+        className="sc-fzozJi cFZRcN"
       >
         <button
           className="sc-AxhCb sc-AxhUy dlVDfw"
