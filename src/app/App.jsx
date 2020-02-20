@@ -9,10 +9,15 @@ import AddTodoListItem from '../components/addTodoListItem';
 import RecordingControls from '../components/recordingControls';
 import en from '../../nls/en.json';
 import de from '../../nls/de.json';
+import Loading from '../components/loading/Loading';
 const messages = {
   'en': en,
   'de': de
 };
+
+function supportedLocale(locale) {
+  return messages[locale] ? true : false;
+}
 
 function useLocale() {
   const DEFAULT_LOCALE = 'en';
@@ -23,7 +28,9 @@ function useLocale() {
       .then(res => {
         res.json()
           .then(data => {
-            setLocale(data.locale ? data.locale : DEFAULT_LOCALE);
+            setLocale(
+              supportedLocale(data.locale) ? data.locale : DEFAULT_LOCALE
+            );
           })
           .catch(e => console.error('[/api/locale] Error parsing JSON', e));
 
@@ -54,7 +61,11 @@ export default function App() {
               <RecordingControls />
             </AppWrapper>
           </IntlProvider>
-        ) : (<div>Loading</div>)
+        ) : (
+          <LoadingWrapper>
+            <Loading />
+          </LoadingWrapper>
+        )
       }
     </Provider>
   );
@@ -65,6 +76,14 @@ const AppWrapper = styled.div`
   flex-direction: column;
   margin: 0 5%;
   font-family: ${theme.font.family};
+`;
+
+const LoadingWrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const TodoListWrapper = styled.div`

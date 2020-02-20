@@ -1,0 +1,1047 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App calls fetch with the localeEndpoint and shows loading state 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+.c1 > div {
+  background: #3F51B5;
+  width: 20%;
+  height: 20%;
+  border-radius: 0.5rem;
+  -webkit-animation: jltStV 2s ease-in-out infinite;
+  animation: jltStV 2s ease-in-out infinite;
+  opacity: 0.1;
+}
+
+.c1 > div:nth-child(1) {
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
+}
+
+.c1 > div:nth-child(2) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.c1 > div:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.c1 > div:nth-child(4) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.c0 {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</div>
+`;
+
+exports[`App matches the snapshot 1`] = `
+.c8 {
+  font-size: 2.5vw;
+  color: #757575;
+}
+
+.c7 {
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
+  min-width: 100px;
+}
+
+.c6 {
+  background: none;
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c6 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c6:hover {
+  -webkit-transform: scale(1.2) rotate(1turn);
+  -ms-transform: scale(1.2) rotate(1turn);
+  transform: scale(1.2) rotate(1turn);
+}
+
+.c9 {
+  background: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c9 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c9:hover {
+  -webkit-transform: scale(1.2) rotate(1turn);
+  -ms-transform: scale(1.2) rotate(1turn);
+  transform: scale(1.2) rotate(1turn);
+}
+
+.c5 {
+  font-size: 5vw;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.c3 {
+  background: #C5CAE9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #3F51B5;
+  min-width: 450px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.c3.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c3.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c3.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c3.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c3.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c3.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c3.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c3.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.c2 {
+  border-left: 1px solid #BDBDBD;
+  padding-left: 0.5rem;
+}
+
+.c2 > * {
+  margin: 1rem 0;
+}
+
+.c15 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+}
+
+.c15 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c15:hover:not([disabled]) {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+.c15:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c14 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+  fill: #3F51B5;
+}
+
+.c14 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c14:hover:not([disabled]) {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+.c14:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c14:hover:not([disabled]) {
+  background: #3F51B5;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c14:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c19 {
+  background: #F44336;
+  border-radius: 0.5rem;
+  border: 2px solid #F44336;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #D32F2F;
+  color: #D32F2F;
+  fill: #D32F2F;
+}
+
+.c19 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c19:hover:not([disabled]) {
+  background: #F44336;
+  border: 2px solid #F44336;
+}
+
+.c19:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c19:hover:not([disabled]) {
+  background: #D32F2F;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c19:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c10 {
+  background: #C5CAE9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 500px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.c10.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c10.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c10.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c10.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c10.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c10.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c10.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c10.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c11 {
+  font-size: 5vw;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.c12 {
+  background: #FFFFFF;
+  color: #212121;
+  font: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border: 1px solid #BDBDBD;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c13 > * {
+  margin: 0 0.25rem;
+}
+
+.c13 > *:first-child {
+  margin: 0 0.5rem 0 0;
+}
+
+.c13 > *:last-child {
+  margin: 0 0 0 0.25rem;
+}
+
+.c17 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c18 {
+  -webkit-animation: ehXoqr infinite 4s ease-in-out;
+  animation: ehXoqr infinite 4s ease-in-out;
+  fill: #D32F2F;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  background-color: #303F9F;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 5%;
+}
+
+.c16 > * {
+  margin: 0 0.5rem;
+}
+
+.c16 > *:first-child {
+  margin: 0 1rem 0 0;
+}
+
+.c16 > *:last-child {
+  margin: 0 0 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 5%;
+  font-family: 'Segoe UI','HelveticaNeue-Light',sans-serif;
+}
+
+.c1 {
+  padding-bottom: 48px;
+}
+
+@media (max-width:480px) {
+  .c8 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c8 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:480px) {
+  .c7 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:240px) {
+  .c5 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c5 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:599px) {
+  .c3 {
+    min-width: 300px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width:599px) {
+  .c10 {
+    max-width: 90%;
+  }
+}
+
+@media (max-width:240px) {
+  .c11 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c11 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:480px) {
+  .c12 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div>
+        <div
+          className="sc-AxjAm sc-AxirZ c3"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 inline-editable"
+            >
+              <div
+                className="inline-editable__edit-trigger"
+                onClick={[Function]}
+              >
+                <span
+                  className="inline-editable__value"
+                >
+                  Test Todo
+                </span>
+              </div>
+            </div>
+            <button
+              className="c6"
+              onClick={[Function]}
+              size="small"
+            >
+              <svg
+                height="18px"
+                version="1.1"
+                viewBox="0 0 14 18"
+                width="14px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Delete
+                </title>
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <g
+                    transform="translate(-207.000000, -245.000000)"
+                  >
+                    <g
+                      transform="translate(100.000000, 100.000000)"
+                    >
+                      <g
+                        id="Outlined-/-Action-/-delete"
+                        transform="translate(102.000000, 142.000000)"
+                      >
+                        <g>
+                          <polygon
+                            id="Path"
+                            points="0 0 24 0 24 24 0 24"
+                          />
+                          <path
+                            d="M16,9 L16,19 L8,19 L8,9 L16,9 Z M14.5,3 L9.5,3 L8.5,4 L5,4 L5,6 L19,6 L19,4 L15.5,4 L14.5,3 Z M18,7 L6,7 L6,19 C6,20.1 6.9,21 8,21 L16,21 C17.1,21 18,20.1 18,19 L18,7 Z"
+                            fill="currentColor"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div
+            className="c7 inline-editable"
+          >
+            <div
+              className="inline-editable__edit-trigger"
+              onClick={[Function]}
+            >
+              <span
+                className="inline-editable__value"
+              >
+                Pass all tests!
+              </span>
+            </div>
+          </div>
+          <a
+            className="c8"
+          >
+            February 12, 2020, 11:19 PM
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          className="sc-AxjAm sc-AxirZ c3"
+        >
+          <div
+            className="c4"
+          >
+            <div
+              className="c5 inline-editable"
+            >
+              <div
+                className="inline-editable__edit-trigger"
+                onClick={[Function]}
+              >
+                <span
+                  className="inline-editable__value"
+                >
+                  Test Todo 2
+                </span>
+              </div>
+            </div>
+            <button
+              className="c6"
+              onClick={[Function]}
+              size="small"
+            >
+              <svg
+                height="18px"
+                version="1.1"
+                viewBox="0 0 14 18"
+                width="14px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Delete
+                </title>
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <g
+                    transform="translate(-207.000000, -245.000000)"
+                  >
+                    <g
+                      transform="translate(100.000000, 100.000000)"
+                    >
+                      <g
+                        id="Outlined-/-Action-/-delete"
+                        transform="translate(102.000000, 142.000000)"
+                      >
+                        <g>
+                          <polygon
+                            id="Path"
+                            points="0 0 24 0 24 24 0 24"
+                          />
+                          <path
+                            d="M16,9 L16,19 L8,19 L8,9 L16,9 Z M14.5,3 L9.5,3 L8.5,4 L5,4 L5,6 L19,6 L19,4 L15.5,4 L14.5,3 Z M18,7 L6,7 L6,19 C6,20.1 6.9,21 8,21 L16,21 C17.1,21 18,20.1 18,19 L18,7 Z"
+                            fill="currentColor"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div
+            className="c7 inline-editable"
+          >
+            <div
+              className="inline-editable__edit-trigger"
+              onClick={[Function]}
+            >
+              <span
+                className="inline-editable__value"
+              >
+                Style these things!
+              </span>
+            </div>
+          </div>
+          <a
+            className="c8"
+          >
+            February 12, 2020, 11:19 PM
+          </a>
+        </div>
+      </div>
+    </div>
+    <button
+      className="c9"
+      id="add-item"
+      onClick={[Function]}
+      size="large"
+    >
+      <svg
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          New todo
+        </title>
+        <linearGradient
+          gradientTransform="matrix(1 0 0 -1 0 -12310)"
+          gradientUnits="userSpaceOnUse"
+          id="a"
+          x1="0"
+          x2="512"
+          y1="-12566"
+          y2="-12566"
+        >
+          <stop
+            offset="0"
+            stopColor="#303F9F"
+          />
+          <stop
+            offset="1"
+            stopColor="#D32F2F"
+          />
+        </linearGradient>
+        <path
+          d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0"
+          fill="url(#a)"
+        />
+        <g
+          fill="#fff"
+        >
+          <path
+            d="m223.085938 411h-48.183594c-15.558594 0-28.21875-12.660156-28.21875-28.21875v-253.5625c0-15.558594 12.660156-28.21875 28.21875-28.21875h177.125c15.5625 0 28.21875 12.660156 28.21875 28.21875v88.601562c0 8.285157 6.71875 15 15 15 8.285156 0 15-6.714843 15-15v-88.601562c0-32.101562-26.117188-58.21875-58.21875-58.21875h-177.121094c-32.105469 0-58.222656 26.117188-58.222656 58.21875v253.5625c0 32.101562 26.121094 58.21875 58.222656 58.21875h48.183594c8.28125 0 15-6.714844 15-15s-6.71875-15-15.003906-15zm0 0"
+          />
+          <path
+            d="m337.621094 157.441406h-148.390625c-8.28125 0-15 6.714844-15 15s6.71875 15 15 15h148.390625c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"
+          />
+          <path
+            d="m352.621094 230.066406c0-8.28125-6.714844-15-15-15h-148.390625c-8.28125 0-15 6.71875-15 15 0 8.285156 6.71875 15 15 15h148.390625c8.285156 0 15-6.714844 15-15zm0 0"
+          />
+          <path
+            d="m189.230469 272.695312c-8.285157 0-15 6.714844-15 15 0 8.285157 6.714843 15 15 15h90.125c8.28125 0 15-6.714843 15-15 0-8.285156-6.71875-15-15-15zm0 0"
+          />
+          <path
+            d="m435.59375 279.765625c-17.082031-17.085937-44.878906-17.082031-61.949219-.011719l-79.097656 78.917969c-1.746094 1.746094-3.039063 3.894531-3.757813 6.261719l-17.222656 56.707031c-1.589844 5.234375-.207031 10.917969 3.613282 14.832031 2.863281 2.933594 6.75 4.527344 10.738281 4.527344 1.335937 0 2.679687-.179688 4.003906-.546875l58.148437-16.105469c2.492188-.691406 4.761719-2.015625 6.589844-3.839844l78.933594-78.78125c17.082031-17.082031 17.082031-44.878906 0-61.960937zm-21.210938 21.210937c5.382813 5.386719 5.382813 14.152344.007813 19.527344l-2.371094 2.367188-19.535156-19.535156 2.359375-2.359376c5.386719-5.382812 14.148438-5.382812 19.539062 0zm-76.121093 95.511719-28.066407 7.773438 8.207032-27.007813 52.84375-52.730468 19.539062 19.539062zm0 0"
+          />
+        </g>
+      </svg>
+    </button>
+    <div>
+      <div
+        className="sc-AxjAm sc-AxirZ c10"
+      >
+        <input
+          className="c11"
+          id="name-input"
+          onChange={[Function]}
+          placeholder="Enter a name"
+          value=""
+        />
+        <textarea
+          async={false}
+          className="sc-AxhCb c12"
+          id="description-input"
+          onChange={[Function]}
+          placeholder="Enter a description"
+          rows={1}
+          value=""
+        />
+        <div
+          className="c13"
+        >
+          <button
+            className="c14"
+            id="cancel"
+            onClick={[Function]}
+          >
+            Cancel
+          </button>
+          <button
+            className="c15"
+            id="add"
+            onClick={[Function]}
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c16"
+  >
+    <svg
+      className="c17"
+      viewBox="0 0 100 100"
+    >
+      <circle
+        className="c18"
+        cx="50"
+        cy="50"
+        disabled={false}
+        fill="#D32F2F"
+        r="50"
+      />
+    </svg>
+    <button
+      className="c14"
+      id="toggle-recording"
+      onClick={[Function]}
+    >
+      Stop
+    </button>
+    <button
+      className="c19"
+      disabled={true}
+      id="clear"
+      onClick={[Function]}
+    >
+      Clear
+    </button>
+    <button
+      className="c14"
+      id="undo"
+      onClick={[Function]}
+    >
+      <svg
+        height="9px"
+        version="1.1"
+        viewBox="0 0 21 9"
+        width="21px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Undo
+        </title>
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <g
+            transform="translate(-238.000000, -1533.000000)"
+          >
+            <g
+              transform="translate(100.000000, 1428.000000)"
+            >
+              <g
+                id="Outlined-/-Content-/-undo"
+                transform="translate(136.000000, 98.000000)"
+              >
+                <g>
+                  <polygon
+                    id="Path"
+                    points="0 0 24 0 24 24 0 24"
+                  />
+                  <path
+                    d="M12.5,8 C9.85,8 7.45,8.99 5.6,10.6 L2,7 L2,16 L11,16 L7.38,12.38 C8.77,11.22 10.54,10.5 12.5,10.5 C16.04,10.5 19.05,12.81 20.1,16 L22.47,15.22 C21.08,11.03 17.15,8 12.5,8 Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <button
+      className="c14"
+      disabled={true}
+      id="redo"
+      onClick={[Function]}
+    >
+      <svg
+        height="9px"
+        version="1.1"
+        viewBox="0 0 21 9"
+        width="21px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Redo
+        </title>
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke="none"
+          strokeWidth="1"
+        >
+          <g
+            transform="translate(-747.000000, -1533.000000)"
+          >
+            <g
+              transform="translate(100.000000, 1428.000000)"
+            >
+              <g
+                id="Outlined-/-Content-/-redo"
+                transform="translate(646.000000, 98.000000)"
+              >
+                <g>
+                  <polygon
+                    id="Path"
+                    points="0 0 24 0 24 24 0 24"
+                  />
+                  <path
+                    d="M18.4,10.6 C16.55,8.99 14.15,8 11.5,8 C6.85,8 2.92,11.03 1.54,15.22 L3.9,16 C4.95,12.81 7.95,10.5 11.5,10.5 C13.45,10.5 15.23,11.22 16.62,12.38 L13,16 L22,16 L22,7 L18.4,10.6 Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
