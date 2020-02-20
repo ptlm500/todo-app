@@ -4,17 +4,11 @@ import { ADD_TODO, UPDATE_TODO, REMOVE_TODO } from '../actions/actions';
 import { recordable } from './recordable';
 
 export const initialState = fromJS({
-  'test-id': {
-    id: 'test-id',
-    name: 'Test Todo',
-    description: 'Pass all tests!',
-    creationDate: '1581549548000'
-  },
-  'test-id-2': {
-    id: 'test-id-2',
-    name: 'Test Todo 2',
-    description: 'Style these things!',
-    creationDate: '1581549548000'
+  'sample-todo': {
+    id: 'sample-todo',
+    name: 'Create your first Todo',
+    description: 'Create your first Todo by clicking the button below!',
+    creationDate: 1582238666000
   }
 });
 
