@@ -2,6 +2,10 @@ const app = require('./server');
 const request = require('supertest');
 const config = require('./config.json');
 
+afterAll(async () => {
+  await new Promise(resolve => setTimeout(() => resolve(), 500));
+});
+
 describe('GET /api/locale', () => {
   it('should return the locale based on cookie', async () => {
     const res = await request(app)
