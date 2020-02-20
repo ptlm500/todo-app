@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Boundary renders a child component that doesn't throw an error 1`] = `
+<div>
+  I'm a good component
+</div>
+`;
+
+exports[`Error Boundary renders the error message when a child component throws an error 1`] = `
+<h1>
+  Uh oh! Something went wrong.
+</h1>
+`;
