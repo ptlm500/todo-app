@@ -8,7 +8,7 @@ export const initialState = fromJS({
     id: 'sample-todo',
     name: 'Create your first Todo',
     description: 'Create your first Todo by clicking the button below!',
-    creationDate: 1582238666000
+    creationDate: '1582238666000'
   }
 });
 
