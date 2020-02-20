@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const detectLocale = require('./utils/detectLocale');
+const detectLocale = require('./server/utils/detectLocale');
 const port = process.env.PORT || 8080;
 
 const app = express();
@@ -21,7 +21,7 @@ app.get('/api/locale', (req, res) => {
 
 app.get('*', (req, res) =>{
   res.status(200)
-    .sendFile(path.join(__dirname, '/client/build/index.html'));
+    .sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
 module.exports = app;

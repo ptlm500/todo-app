@@ -655,7 +655,7 @@ exports[`App matches the snapshot 1`] = `
                 <span
                   className="inline-editable__value"
                 >
-                  Test Todo
+                  Create your first Todo
                 </span>
               </div>
             </div>
@@ -717,104 +717,14 @@ exports[`App matches the snapshot 1`] = `
               <span
                 className="inline-editable__value"
               >
-                Pass all tests!
+                Create your first Todo by clicking the button below!
               </span>
             </div>
           </div>
           <a
             className="c8"
           >
-            February 12, 2020, 11:19 PM
-          </a>
-        </div>
-      </div>
-      <div>
-        <div
-          className="sc-AxjAm sc-AxirZ c3"
-        >
-          <div
-            className="c4"
-          >
-            <div
-              className="c5 inline-editable"
-            >
-              <div
-                className="inline-editable__edit-trigger"
-                onClick={[Function]}
-              >
-                <span
-                  className="inline-editable__value"
-                >
-                  Test Todo 2
-                </span>
-              </div>
-            </div>
-            <button
-              className="c6"
-              onClick={[Function]}
-              size="small"
-            >
-              <svg
-                height="18px"
-                version="1.1"
-                viewBox="0 0 14 18"
-                width="14px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>
-                  Delete
-                </title>
-                <g
-                  fill="none"
-                  fillRule="evenodd"
-                  stroke="none"
-                  strokeWidth="1"
-                >
-                  <g
-                    transform="translate(-207.000000, -245.000000)"
-                  >
-                    <g
-                      transform="translate(100.000000, 100.000000)"
-                    >
-                      <g
-                        id="Outlined-/-Action-/-delete"
-                        transform="translate(102.000000, 142.000000)"
-                      >
-                        <g>
-                          <polygon
-                            id="Path"
-                            points="0 0 24 0 24 24 0 24"
-                          />
-                          <path
-                            d="M16,9 L16,19 L8,19 L8,9 L16,9 Z M14.5,3 L9.5,3 L8.5,4 L5,4 L5,6 L19,6 L19,4 L15.5,4 L14.5,3 Z M18,7 L6,7 L6,19 C6,20.1 6.9,21 8,21 L16,21 C17.1,21 18,20.1 18,19 L18,7 Z"
-                            fill="currentColor"
-                          />
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </button>
-          </div>
-          <div
-            className="c7 inline-editable"
-          >
-            <div
-              className="inline-editable__edit-trigger"
-              onClick={[Function]}
-            >
-              <span
-                className="inline-editable__value"
-              >
-                Style these things!
-              </span>
-            </div>
-          </div>
-          <a
-            className="c8"
-          >
-            February 12, 2020, 11:19 PM
+            February 20, 2020, 10:44 PM
           </a>
         </div>
       </div>
