@@ -2,8 +2,50 @@
 
 exports[`AddTodoListItem matches the snapshot 1`] = `
 Array [
-  <button
-    className="sc-AxgMl gwVJkB"
+  .c0 {
+  background: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c0 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.2) rotate(1turn);
+  -ms-transform: scale(1.2) rotate(1turn);
+  transform: scale(1.2) rotate(1turn);
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (max-width:240px) {
+
+}
+
+@media (min-width:640px) {
+
+}
+
+@media (max-width:480px) {
+
+}
+
+@media (min-width:640px) {
+
+}
+
+<button
+    className="c0"
     id="add-item"
     onClick={[Function]}
     size="large"
@@ -58,7 +100,244 @@ Array [
       </g>
     </svg>
   </button>,
-  <div
+  .c5 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+}
+
+.c5 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c5:hover:not([disabled]) {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+.c5:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c4 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+  fill: #3F51B5;
+}
+
+.c4 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c4:hover:not([disabled]) {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+.c4:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c4:hover:not([disabled]) {
+  background: #3F51B5;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c4:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c0 {
+  background: #C5CAE9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 500px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.c0.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c1 {
+  font-size: 5vw;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.c2 {
+  background: #FFFFFF;
+  color: #212121;
+  font: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border: 1px solid #BDBDBD;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c3 > * {
+  margin: 0 0.25rem;
+}
+
+.c3 > *:first-child {
+  margin: 0 0.5rem 0 0;
+}
+
+.c3 > *:last-child {
+  margin: 0 0 0 0.25rem;
+}
+
+@media (max-width:599px) {
+  .c0 {
+    max-width: 90%;
+  }
+}
+
+@media (max-width:240px) {
+  .c1 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:480px) {
+  .c2 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c2 {
+    font-size: 16px;
+  }
+}
+
+<div
     appear={true}
     classNames="card-transition"
     exit={false}
@@ -68,10 +347,10 @@ Array [
     unmountOnExit={true}
   >
     <div
-      className="sc-AxirZ sc-AxiKw sc-AxheI gcnXRt"
+      className="sc-AxirZ sc-AxiKw c0"
     >
       <input
-        className="sc-Axmtr hsWzle"
+        className="c1"
         id="name-input"
         onChange={[Function]}
         placeholder="Enter a name"
@@ -79,7 +358,7 @@ Array [
       />
       <textarea
         async={false}
-        className="sc-AxjAm sc-AxmLO hHHzKC"
+        className="sc-AxjAm c2"
         id="description-input"
         onChange={[Function]}
         placeholder="Enter a description"
@@ -87,17 +366,17 @@ Array [
         value=""
       />
       <div
-        className="sc-fzozJi cFZRcN"
+        className="c3"
       >
         <button
-          className="sc-AxhCb sc-AxhUy dlVDfw"
+          className="c4"
           id="cancel"
           onClick={[Function]}
         >
           Cancel
         </button>
         <button
-          className="sc-AxhCb giIiPw"
+          className="c5"
           id="add"
           onClick={[Function]}
         >

@@ -5,6 +5,7 @@ import { TodoListItem } from './TodoListItem';
 import IconButton from '../iconButton';
 import Name from './name';
 import Description from './description';
+import 'jest-styled-components';
 
 const defaultProps = {
   id: 'test-id',

@@ -1,15 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RecordingControls renders StyledRecordingControls matching the snapshot when recording is disabled 1`] = `
+.c3 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+  fill: #3F51B5;
+}
+
+.c3 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c3:hover:not([disabled]) {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+.c3:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c3:hover:not([disabled]) {
+  background: #3F51B5;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c3:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c4 {
+  background: #F44336;
+  border-radius: 0.5rem;
+  border: 2px solid #F44336;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #D32F2F;
+  color: #D32F2F;
+  fill: #D32F2F;
+}
+
+.c4 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c4:hover:not([disabled]) {
+  background: #F44336;
+  border: 2px solid #F44336;
+}
+
+.c4:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c4:hover:not([disabled]) {
+  background: #D32F2F;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c4:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c1 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c2 {
+  -webkit-animation: none;
+  animation: none;
+  fill: #BDBDBD;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  background-color: #303F9F;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 5%;
+}
+
+.c0 > * {
+  margin: 0 0.5rem;
+}
+
+.c0 > *:first-child {
+  margin: 0 1rem 0 0;
+}
+
+.c0 > *:last-child {
+  margin: 0 0 0 0.5rem;
+}
+
 <div
-  className="sc-AxhUy bSinxW"
+  className="c0"
 >
   <svg
-    className="sc-AxiKw bvQulp"
+    className="c1"
     viewBox="0 0 100 100"
   >
     <circle
-      className="sc-AxhCb bxmskA"
+      className="c2"
       cx="50"
       cy="50"
       disabled={true}
@@ -18,14 +161,14 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
     />
   </svg>
   <button
-    className="sc-AxjAm sc-AxirZ iraoip"
+    className="sc-AxjAm c3"
     id="toggle-recording"
     onClick={[MockFunction]}
   >
     Start
   </button>
   <button
-    className="sc-AxjAm sc-AxirZ cdVtEh"
+    className="sc-AxjAm c4"
     disabled={true}
     id="clear"
     onClick={[MockFunction]}
@@ -33,7 +176,7 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
     Clear
   </button>
   <button
-    className="sc-AxjAm sc-AxirZ iraoip"
+    className="sc-AxjAm c3"
     id="undo"
     onClick={[MockFunction]}
   >
@@ -80,7 +223,7 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
     </svg>
   </button>
   <button
-    className="sc-AxjAm sc-AxirZ iraoip"
+    className="sc-AxjAm c3"
     disabled={true}
     id="redo"
     onClick={[MockFunction]}
@@ -131,15 +274,158 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
 `;
 
 exports[`RecordingControls renders StyledRecordingControls matching the snapshot when recording is enabled 1`] = `
+.c3 {
+  background: #3F51B5;
+  border-radius: 0.5rem;
+  border: 2px solid #3F51B5;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #3F51B5;
+  color: #3F51B5;
+  fill: #3F51B5;
+}
+
+.c3 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c3:hover:not([disabled]) {
+  background: #303F9F;
+  border: 2px solid #303F9F;
+}
+
+.c3:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c3:hover:not([disabled]) {
+  background: #3F51B5;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c3:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c4 {
+  background: #F44336;
+  border-radius: 0.5rem;
+  border: 2px solid #F44336;
+  cursor: pointer;
+  color: #FFFFFF;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  fill: #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #D32F2F;
+  color: #D32F2F;
+  fill: #D32F2F;
+}
+
+.c4 > svg {
+  width: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.c4:hover:not([disabled]) {
+  background: #F44336;
+  border: 2px solid #F44336;
+}
+
+.c4:disabled {
+  border: 2px solid #BDBDBD;
+  background: #BDBDBD;
+  color: #BDBDBD;
+  fill: #3F51B5;
+}
+
+.c4:hover:not([disabled]) {
+  background: #D32F2F;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c4:disabled {
+  background: #FFFFFF;
+  border: 2px solid #BDBDBD;
+  cursor: auto;
+}
+
+.c1 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.c2 {
+  -webkit-animation: ehXoqr infinite 4s ease-in-out;
+  animation: ehXoqr infinite 4s ease-in-out;
+  fill: #D32F2F;
+  width: 100;
+  height: 100;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  background-color: #303F9F;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 5%;
+}
+
+.c0 > * {
+  margin: 0 0.5rem;
+}
+
+.c0 > *:first-child {
+  margin: 0 1rem 0 0;
+}
+
+.c0 > *:last-child {
+  margin: 0 0 0 0.5rem;
+}
+
 <div
-  className="sc-AxhUy bSinxW"
+  className="c0"
 >
   <svg
-    className="sc-AxiKw bvQulp"
+    className="c1"
     viewBox="0 0 100 100"
   >
     <circle
-      className="sc-AxhCb dmbjDf"
+      className="c2"
       cx="50"
       cy="50"
       disabled={false}
@@ -148,14 +434,14 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
     />
   </svg>
   <button
-    className="sc-AxjAm sc-AxirZ iraoip"
+    className="sc-AxjAm c3"
     id="toggle-recording"
     onClick={[MockFunction]}
   >
     Stop
   </button>
   <button
-    className="sc-AxjAm sc-AxirZ cdVtEh"
+    className="sc-AxjAm c4"
     disabled={true}
     id="clear"
     onClick={[MockFunction]}
@@ -163,7 +449,7 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
     Clear
   </button>
   <button
-    className="sc-AxjAm sc-AxirZ iraoip"
+    className="sc-AxjAm c3"
     id="undo"
     onClick={[MockFunction]}
   >
@@ -210,7 +496,7 @@ exports[`RecordingControls renders StyledRecordingControls matching the snapshot
     </svg>
   </button>
   <button
-    className="sc-AxjAm sc-AxirZ iraoip"
+    className="sc-AxjAm c3"
     disabled={true}
     id="redo"
     onClick={[MockFunction]}

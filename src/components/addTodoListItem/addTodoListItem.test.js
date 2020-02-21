@@ -2,6 +2,7 @@ import React from 'react';
 import { act } from 'react-test-renderer';
 import { renderWithIntl } from '../../../test/utils';
 import { AddTodoListItem } from './AddTodoListItem';
+import 'jest-styled-components';
 
 // Mocking transition group https://github.com/reactjs/react-transition-group/issues/208
 jest.mock('react-transition-group', () => {
