@@ -1,15 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Name renders a Name 1`] = `
+.c1 {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.c0 {
+  font-size: 5vw;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+@media (max-width:240px) {
+  .c0 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c0 {
+    font-size: 32px;
+  }
+}
+
 <div
-  className="sc-AxirZ iirBHr test-class inline-editable"
+  className="c0 test-class inline-editable"
 >
   <div
     className="inline-editable__edit-trigger"
     onClick={[Function]}
   >
     <span
-      className="inline-editable__value"
+      className="c1"
     >
       Test name
     </span>

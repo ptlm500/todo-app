@@ -1,28 +1,202 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TodoListItem renders a todoListItem matching the snapshot 1`] = `
+.c6 {
+  font-size: 2.5vw;
+  color: #757575;
+}
+
+.c3 {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.c5 {
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
+  min-width: 100px;
+}
+
+.c4 {
+  background: none;
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c4 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c4:hover {
+  -webkit-transform: scale(1.2) rotate(1turn);
+  -ms-transform: scale(1.2) rotate(1turn);
+  transform: scale(1.2) rotate(1turn);
+}
+
+.c2 {
+  font-size: 5vw;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.c0 {
+  background: #C5CAE9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #3F51B5;
+  min-width: 450px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.c0.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c0.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c0.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+@media (max-width:480px) {
+  .c6 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:480px) {
+  .c5 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:240px) {
+  .c2 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:599px) {
+  .c0 {
+    min-width: 300px;
+    max-width: 90%;
+  }
+}
+
 <div
-  className="sc-AxjAm sc-AxirZ sc-AxmLO hShNUz"
+  className="sc-AxjAm sc-AxirZ c0"
 >
   <div
-    className="sc-fzozJi VsnIy"
+    className="c1"
   >
     <div
-      className="sc-Axmtr gNLRxd inline-editable"
+      className="c2 inline-editable"
     >
       <div
         className="inline-editable__edit-trigger"
         onClick={[Function]}
       >
         <span
-          className="inline-editable__value"
+          className="c3"
         >
           Test name
         </span>
       </div>
     </div>
     <button
-      className="sc-AxgMl goaPPV"
+      className="c4"
       onClick={[Function]}
       size="small"
     >
@@ -70,21 +244,21 @@ exports[`TodoListItem renders a todoListItem matching the snapshot 1`] = `
     </button>
   </div>
   <div
-    className="sc-AxhUy ksTcoh inline-editable"
+    className="c5 inline-editable"
   >
     <div
       className="inline-editable__edit-trigger"
       onClick={[Function]}
     >
       <span
-        className="inline-editable__value"
+        className="c3"
       >
         test description
       </span>
     </div>
   </div>
   <a
-    className="sc-AxiKw loCESA"
+    className="c6"
   >
     February 18, 2020, 4:38 PM
   </a>

@@ -2,6 +2,7 @@ import React from 'react';
 import renderer, { act } from 'react-test-renderer';
 import Name from './Name';
 import InlineEditable from '../../inline-editable';
+import 'jest-styled-components';
 
 const defaultProps = {
   name: 'Test name',

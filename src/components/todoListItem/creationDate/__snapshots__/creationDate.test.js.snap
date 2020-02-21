@@ -1,8 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CreationDate renders the creation date using FormattedMessage 1`] = `
+.c0 {
+  font-size: 2.5vw;
+  color: #757575;
+}
+
+@media (max-width:480px) {
+  .c0 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c0 {
+    font-size: 16px;
+  }
+}
+
 <a
-  className="sc-AxjAm fkhFyP test-class"
+  className="c0 test-class"
 >
   February 18, 2020, 12:41 PM
 </a>

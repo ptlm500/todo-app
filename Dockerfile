@@ -8,9 +8,10 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install --silent
-RUN npm build
 
-COPY . .
+COPY . /app/
+
+RUN npm run build
 
 CMD [ "npm", "run", "start:prod" ]
 

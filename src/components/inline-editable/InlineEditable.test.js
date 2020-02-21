@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer, { act } from 'react-test-renderer';
 import InlineEditable from './InlineEditable';
+import 'jest-styled-components';
 
 const mockFocus = jest.fn();
 const mockOnSubmit = jest.fn();

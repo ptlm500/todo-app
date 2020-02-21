@@ -1,32 +1,215 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TodoList renders the correct number of todos, matching the snapshot 1`] = `
+.c7 {
+  font-size: 2.5vw;
+  color: #757575;
+}
+
+.c4 {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.c6 {
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
+  min-width: 100px;
+}
+
+.c5 {
+  background: none;
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c5 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c5:hover {
+  -webkit-transform: scale(1.2) rotate(1turn);
+  -ms-transform: scale(1.2) rotate(1turn);
+  transform: scale(1.2) rotate(1turn);
+}
+
+.c3 {
+  font-size: 5vw;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.c1 {
+  background: #C5CAE9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #3F51B5;
+  min-width: 450px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.c1.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c1.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c1.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c1.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c1.card-transition-enter {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c1.card-transition-enter-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c1.card-transition-appear {
+  opacity: 0.01;
+  -webkit-transform: scaleX(0) scaleY(0);
+  -ms-transform: scaleX(0) scaleY(0);
+  transform: scaleX(0) scaleY(0);
+}
+
+.c1.card-transition-appear-active {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.c0 {
+  border-left: 1px solid #BDBDBD;
+  padding-left: 0.5rem;
+}
+
+.c0 > * {
+  margin: 1rem 0;
+}
+
+@media (max-width:480px) {
+  .c7 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:480px) {
+  .c6 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:240px) {
+  .c3 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:640px) {
+  .c3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:599px) {
+  .c1 {
+    min-width: 300px;
+    max-width: 90%;
+  }
+}
+
 <div
-  className="sc-fzoLsD dZCfzu"
+  className="c0"
 >
   <div>
     <div
-      className="sc-AxjAm sc-AxirZ sc-AxmLO hShNUz"
+      className="sc-AxjAm sc-AxirZ c1"
     >
       <div
-        className="sc-fzozJi VsnIy"
+        className="c2"
       >
         <div
-          className="sc-Axmtr gNLRxd inline-editable"
+          className="c3 inline-editable"
         >
           <div
             className="inline-editable__edit-trigger"
             onClick={[Function]}
           >
             <span
-              className="inline-editable__value"
+              className="c4"
             >
               Test Todo
             </span>
           </div>
         </div>
         <button
-          className="sc-AxgMl goaPPV"
+          className="c5"
           onClick={[Function]}
           size="small"
         >
@@ -74,21 +257,21 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
         </button>
       </div>
       <div
-        className="sc-AxhUy ksTcoh inline-editable"
+        className="c6 inline-editable"
       >
         <div
           className="inline-editable__edit-trigger"
           onClick={[Function]}
         >
           <span
-            className="inline-editable__value"
+            className="c4"
           >
             Pass all tests!
           </span>
         </div>
       </div>
       <a
-        className="sc-AxiKw loCESA"
+        className="c7"
       >
         February 12, 2020, 11:19 PM
       </a>
@@ -96,27 +279,27 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
   </div>
   <div>
     <div
-      className="sc-AxjAm sc-AxirZ sc-AxmLO hShNUz"
+      className="sc-AxjAm sc-AxirZ c1"
     >
       <div
-        className="sc-fzozJi VsnIy"
+        className="c2"
       >
         <div
-          className="sc-Axmtr gNLRxd inline-editable"
+          className="c3 inline-editable"
         >
           <div
             className="inline-editable__edit-trigger"
             onClick={[Function]}
           >
             <span
-              className="inline-editable__value"
+              className="c4"
             >
               Test Todo 2
             </span>
           </div>
         </div>
         <button
-          className="sc-AxgMl goaPPV"
+          className="c5"
           onClick={[Function]}
           size="small"
         >
@@ -164,21 +347,21 @@ exports[`TodoList renders the correct number of todos, matching the snapshot 1`]
         </button>
       </div>
       <div
-        className="sc-AxhUy ksTcoh inline-editable"
+        className="c6 inline-editable"
       >
         <div
           className="inline-editable__edit-trigger"
           onClick={[Function]}
         >
           <span
-            className="inline-editable__value"
+            className="c4"
           >
             Especially this test!
           </span>
         </div>
       </div>
       <a
-        className="sc-AxiKw loCESA"
+        className="c7"
       >
         February 12, 2020, 11:19 PM
       </a>

@@ -5,6 +5,7 @@ import store from '../../state/store';
 import { renderWithIntl } from '../../../test/utils';
 import { StyledTodoList, Container } from './TodoList';
 import { TodoListItem } from '../todoListItem/TodoListItem';
+import 'jest-styled-components';
 
 // Mocking transition group https://github.com/reactjs/react-transition-group/issues/208
 jest.mock('react-transition-group', () => {

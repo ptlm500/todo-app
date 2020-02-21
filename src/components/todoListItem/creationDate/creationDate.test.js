@@ -1,6 +1,7 @@
 import React from 'react';
 import { renderWithIntl } from '../../../../test/utils';
 import CreationDate from './CreationDate';
+import 'jest-styled-components';
 
 describe('CreationDate', () => {
   it('renders the creation date using FormattedMessage', () => {

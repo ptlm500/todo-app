@@ -1,6 +1,7 @@
 import React from 'react';
 import { renderWithIntl } from '../../../test/utils';
 import { StyledRecordingControls } from './RecordingControls';
+import 'jest-styled-components';
 
 const defaultProps = {
   recordingEnabled: true,
