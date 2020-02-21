@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './InlineEditable.scss';
+import styled from 'styled-components';
 
 export default function InlineEditable(props) {
   const {
@@ -60,15 +60,20 @@ export default function InlineEditable(props) {
             className='inline-editable__edit-trigger'
             onClick={() => setEditing(true)}
           >
-            <span className='inline-editable__value'>
+            <Value>
               {value || placeholder || 'Provide a placeholder value'}
-            </span>
+            </Value>
           </div>
         )
       }
     </div>
   );
 }
+
+const Value = styled.span`
+  white-space: pre-wrap;
+  word-break: break-word;
+`;
 
 InlineEditable.propTypes = {
   className: PropTypes.string,
